@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>北歐三國旅遊手冊 v8｜2026.9.11–9.26</title>
+<title>北歐三國旅遊手冊 v9｜2026.9.11–9.26</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -89,17 +89,6 @@ body{background:var(--snow);color:var(--fjord);font-family:var(--sans);font-size
 .btn:focus-visible{outline:3px solid var(--birch);outline-offset:2px}
 @media (prefers-reduced-motion: reduce){.btn,.stop{transition:none}.btn.on-yes,.btn.on-no{transform:none}}
 
-/* ---------- branch proposal ---------- */
-.branch{background:#1E3D4F;color:#E8EEF1;border-radius:14px;padding:18px 16px;margin-top:26px}
-.branch h3{font-family:var(--serif);font-size:19px;font-weight:700}
-.branch p{font-size:13.5px;color:#BFD0D8;margin-top:6px}
-.branch .stop{background:#25485C;border-color:#3D5A6C;margin-top:12px}
-.branch .name{color:#EDF2F4}
-.branch .desc{color:#A8BEC9}
-.branch .btn{background:#1E3D4F;border-color:#3D5A6C;color:#BFD0D8}
-.branch .btn.on-yes{background:var(--birch);border-color:var(--birch);color:#fff}
-.branch .btn.on-no{background:#7A8E99;border-color:#7A8E99;color:#fff}
-
 /* ---------- cross-region legs ---------- */
 .leg{background:var(--fjord);color:#E8EEF1;border-radius:12px;padding:15px 16px;margin:26px 0 4px}
 .leg .leg-title{font-family:var(--serif);font-weight:700;font-size:15.5px;letter-spacing:.02em}
@@ -111,6 +100,7 @@ body{background:var(--snow);color:var(--fjord);font-family:var(--sans);font-size
 .check h3{font-family:var(--serif);font-size:17px;margin-bottom:10px}
 .check ol{padding-left:20px;display:grid;gap:7px;font-size:13.5px}
 .check .done{color:var(--fjord-soft)}
+.check .warn{color:var(--rust);font-weight:700}
 .weather{font-size:13.5px;margin-top:12px;color:#3F5563}
 .budget{font-size:13.5px;color:#3F5563;margin-top:10px;border-top:1px dashed var(--line);padding-top:10px}
 
@@ -140,119 +130,132 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
 
 <div class="cover">
   <div class="wrap">
-    <div class="eyebrow">SCANDINAVIA · SEPTEMBER 2026</div>
+    <div class="eyebrow">SCANDINAVIA + ARCTIC · SEPTEMBER 2026</div>
     <h1>北歐三國旅遊手冊</h1>
-    <div class="dates">2026.9.11（五）— 9.26（六）・14 天・2 人・v8 遊記連結版</div>
-    <div class="route"><span>哥本哈根 3 晚</span><span>渡輪 1 晚</span><span>奧斯陸 2 晚</span><span>Flåm 1 晚</span><span>卑爾根 2 晚</span><span>斯德哥爾摩 4 晚</span></div>
+    <div class="dates">2026.9.11（五）— 9.26（六）・14 天・2 人・v9 特羅姆瑟版</div>
+    <div class="route"><span>哥本哈根 2 晚</span><span>渡輪 1 晚</span><span>奧斯陸 2 晚</span><span>Flåm 1 晚</span><span>卑爾根 2 晚</span><span>特羅姆瑟 2 晚</span><span>斯德哥爾摩 3 晚</span></div>
     <div class="flights">
       <div><b>去程 9/11</b>　TG635 台北 18:50 → 曼谷 21:35｜TG950 曼谷 01:10 → 哥本哈根 07:40（+1）</div>
       <div><b>回程 9/25</b>　TG961 斯德哥爾摩 13:50 → 曼谷 05:50｜TG632 曼谷 08:15 → 台北 13:05（+1）</div>
-      <div><b>移動方式</b>　全程大眾運輸（不租車）：火車・渡輪・遊船・輕軌・地鐵</div>
+      <div><b>移動方式</b>　火車・渡輪・遊船・輕軌・地鐵＋兩段北極圈內陸機</div>
     </div>
   </div>
 </div>
 
 <div class="wrap">
 
-  <div class="howto"><b>使用方式</b>：每張卡片按「想去」或「跳過」標記（住宿卡也可以標——哥本哈根與 Flåm 各有 A/B 二選一）。全部看完後按右下角「產生微調清單」，複製結果貼回給 Claude，我就依你的選擇重排行程。</div>
+  <div class="howto"><b>使用方式</b>：每張卡片按「想去」或「跳過」標記（住宿卡也可以標——哥本哈根與 Flåm 各有 A/B 二選一）。卡片下方有中文遊記連結、卡片之間有點對點交通與 Google 導航。全部看完後按右下角「產生微調清單」，複製結果貼回給 Claude。</div>
 
   <!-- ==================== DENMARK ==================== -->
   <section class="chapter">
-    <div class="ch-head"><span class="no">01</span><h2>丹麥・哥本哈根</h2><span class="span">9/12–9/15・3 晚</span></div>
-    <div class="ch-note">交通票券：City Pass Small（24h／72h，App 購買，含機場段＋地鐵＋公車）。市區景點大多步行可達。</div>
+    <div class="ch-head"><span class="no">01</span><h2>丹麥・哥本哈根</h2><span class="span">9/12–9/14・2 晚</span></div>
+    <div class="ch-note">交通票券：City Pass Small（24h／72h，App 購買，含機場段＋地鐵＋公車＋港灣巴士）。緊湊版：兩個整天＋上船日半天。</div>
 
     <div class="day">
       <div class="day-head"><span class="d">9/12</span><span class="w">週六・抵達日</span></div>
-      <div class="transit"><b>交通</b>：機場搭火車直達中央車站（13 分）→ Next House 步行 5 分／CityHub 門口公車約 10 分，先寄行李。新港一帶步行或地鐵 M3/M4 至 Kongens Nytorv；往 Refshaleøen（Lille Bakery）從 Nyhavn 搭港灣巴士 991/992（City Pass 含）。</div>
+      <div class="transit"><b>交通</b>：機場搭火車直達中央車站（13 分）→ Next House 步行 5 分／CityHub 門口公車約 10 分，先寄行李。往 Refshaleøen（Lille Bakery）從 Nyhavn 搭港灣巴士 991/992（City Pass 含）。</div>
       <div id="stops-d1"></div>
     </div>
     <div class="day">
-      <div class="day-head"><span class="d">9/13</span><span class="w">週日</span></div>
-      <div class="transit"><b>交通</b>：全日步行圈——羅森堡宮、圓塔、步行街到 Tivoli 都在 20 分鐘腳程內。</div>
+      <div class="day-head"><span class="d">9/13</span><span class="w">週日・北西蘭一日遊</span></div>
+      <div class="transit"><b>交通</b>：中央車站搭往 Helsingør 的火車約 45 分 → 克倫堡；回程 Humlebæk 站下車步行 10 分到 Louisiana。註：兩處<b>週一皆休館</b>，所以卡死在週日。</div>
       <div id="stops-d2"></div>
     </div>
     <div class="day">
-      <div class="day-head"><span class="d">9/14</span><span class="w">週一・北西蘭一日遊</span></div>
-      <div class="transit"><b>交通</b>：中央車站搭往 Helsingør 的火車約 45 分 → 克倫堡；回程 Humlebæk 站下車步行 10 分到 Louisiana，再搭原線回市區。</div>
+      <div class="day-head"><span class="d">9/14</span><span class="w">週一・上船日</span></div>
+      <div class="transit"><b>交通</b>：上午全在老城步行圈；14:30 回旅館取行李 → 計程車約 15 分（或地鐵 M4 往 Nordhavn＋步行）到 DFDS 碼頭，<b>開船前 90 分報到</b>、16:30 開船。</div>
       <div id="stops-d3"></div>
-    </div>
-    <div class="day">
-      <div class="day-head"><span class="d">9/15</span><span class="w">週二・傍晚上船</span></div>
-      <div class="transit"><b>交通</b>：下午地鐵 M4 往 Nordhavn 方向＋步行，或計程車約 15 分到 DFDS 碼頭（導航「DFDS Terminal København」，開船前 90 分報到）。</div>
-      <div id="stops-d4"></div>
     </div>
   </section>
 
   <div class="leg">
-    <div class="leg-title">跨區交通①｜丹麥 → 挪威：DFDS 過夜渡輪（9/15–16）</div>
-    <p><b>16:30 開船 → 翌日約 10:00 抵奧斯陸 Vippetangen 碼頭</b>。訂兩人一室艙房（含私人衛浴，建議加價海景艙），行李全部隨身上船。碼頭在 Nordhavn：地鐵 M4＋步行或計程車約 15 分，<b>開船前 90 分報到</b>。船上有自助晚餐（可加購）與免稅店；進奧斯陸峽灣的最後一小時記得上甲板。替代方案：直飛奧斯陸約 1 小時，但會多一晚旅館錢、也少了海上日出。</p>
+    <div class="leg-title">跨區交通①｜丹麥 → 挪威：DFDS 過夜渡輪（9/14–15）</div>
+    <p><b>16:30 開船 → 翌日約 10:00 抵奧斯陸 Vippetangen 碼頭</b>。訂兩人一室艙房（含私人衛浴，建議加價海景艙），行李全部隨身上船。船上有自助晚餐（可加購）與免稅店；進奧斯陸峽灣的最後一小時記得上甲板。</p>
   </div>
 
   <!-- ==================== NORWAY ==================== -->
   <section class="chapter">
-    <div class="ch-head"><span class="no">02</span><h2>挪威</h2><span class="span">9/16–9/20・渡輪+4 晚</span></div>
-    <div class="ch-note">交通票券：奧斯陸用 Ruter App 買 24 小時票；卑爾根老城全步行。9/18 山區單日溫差最大，毛帽手套備著。</div>
+    <div class="ch-head"><span class="no">02</span><h2>挪威・奧斯陸與峽灣</h2><span class="span">9/15–9/19・渡輪+5 晚</span></div>
+    <div class="ch-note">交通票券：奧斯陸用 Ruter App 買 24 小時票；卑爾根老城全步行。9/17 山區單日溫差最大，毛帽手套備著。</div>
 
     <div class="day">
-      <div class="day-head"><span class="d">9/16</span><span class="w">週三・渡輪 10:00 進奧斯陸峽灣</span></div>
+      <div class="day-head"><span class="d">9/15</span><span class="w">週二・渡輪 10:00 進奧斯陸峽灣</span></div>
       <div class="transit"><b>交通</b>：渡輪停 Vippetangen 碼頭 → 步行 15 分到旅館寄行李。歌劇院、孟克館、Aker Brygge 全在步行圈。</div>
+      <div id="stops-d4"></div>
+    </div>
+    <div class="day">
+      <div class="day-head"><span class="d">9/16</span><span class="w">週三</span></div>
+      <div class="transit"><b>交通</b>：電車 12 號 → Vigelandsparken 站；公車 30 號 → Bygdøy 博物館半島（Ruter 24h 票全包）。</div>
       <div id="stops-d5"></div>
     </div>
-    <div class="day">
-      <div class="day-head"><span class="d">9/17</span><span class="w">週四</span></div>
-      <div class="transit"><b>交通</b>：電車 12 號 → Vigelandsparken 站；公車 30 號 → Bygdøy 博物館半島（Ruter 24h 票全包）。</div>
-      <div id="stops-d6"></div>
-    </div>
+
     <div class="leg">
-      <div class="leg-title">跨區交通②｜奧斯陸 → 卑爾根：挪威縮影，兩天走完（9/18–19）</div>
-      <p>五段接力：<b>Vy 火車</b> Oslo→Myrdal（4.5h）→ <b>Flåmsbana</b> 下山（1h）→ 夜宿 Flåm → <b>峽灣遊船</b> Flåm→Gudvangen（2h）→ <b>接駁巴士</b>→Voss（1h15）→ <b>Vy 火車</b>→Bergen（1h15）。全是單程票組合，visitflam.com 可一次訂齊（含 Stegastein 巴士）；Vy 火車開賣後越早越便宜。每段都有行李置物區，30 公斤行李箱全程可帶。</p>
+      <div class="leg-title">跨區交通②｜奧斯陸 → 卑爾根：挪威縮影，兩天走完（9/17–18）</div>
+      <p>五段接力：<b>Vy 火車</b> Oslo→Myrdal（4.5h）→ <b>Flåmsbana</b> 下山（1h）→ 夜宿 Flåm → <b>峽灣遊船</b> Flåm→Gudvangen（2h）→ <b>接駁巴士</b>→Voss（1h15）→ <b>Vy 火車</b>→Bergen（1h15）。Vy 官網訂「Oslo→Flåm」一張票即含 Flåmsbana；遊船＋Stegastein 在 visitflam.com 訂。<b>注意：日期是 9/17 出發</b>，若已訂 9/18 的票要改。每段都有行李置物區。</p>
     </div>
 
     <div class="day">
-      <div class="day-head"><span class="d">9/18</span><span class="w">週五・挪威縮影 Day 1</span></div>
-      <div class="transit"><b>交通</b>：旅館步行 5 分到中央車站搭早班 Vy 火車 → Myrdal（卑爾根鐵路）→ Flåmsbana 下山，約 14:10 抵 Flåm。夜宿 Flåm，村內全步行，Stegastein 巴士於碼頭發車。</div>
+      <div class="day-head"><span class="d">9/17</span><span class="w">週四・挪威縮影 Day 1</span></div>
+      <div class="transit"><b>交通</b>：旅館步行 5 分到中央車站搭早班 Vy 火車 → Myrdal → Flåmsbana 下山，約 14:10 抵 Flåm。夜宿 Flåm，村內全步行，Stegastein 巴士於碼頭發車。</div>
+      <div id="stops-d6"></div>
+    </div>
+    <div class="day">
+      <div class="day-head"><span class="d">9/18</span><span class="w">週五・挪威縮影 Day 2</span></div>
+      <div class="transit"><b>交通</b>：上午遊船 → Gudvangen → 接駁巴士到 Voss → 火車進卑爾根（傍晚抵達，出站即旅館）。大行李火車／遊船／巴士都有置物區，全程可帶。</div>
       <div id="stops-d7"></div>
     </div>
     <div class="day">
-      <div class="day-head"><span class="d">9/19</span><span class="w">週六・挪威縮影 Day 2</span></div>
-      <div class="transit"><b>交通</b>：上午遊船 → Gudvangen → 接駁巴士到 Voss → 火車進卑爾根（傍晚抵達，出站即旅館）。大行李火車／遊船／巴士都有置物區，全程可帶。</div>
+      <div class="day-head"><span class="d">9/19</span><span class="w">週六・卑爾根整日</span></div>
+      <div class="transit"><b>交通</b>：老城全步行；Ulriken 搭 2 或 3 號公車轉纜車上山。週六魚市最熱鬧。</div>
       <div id="stops-d8"></div>
-    </div>
-    <div class="day">
-      <div class="day-head"><span class="d">9/20</span><span class="w">週日</span></div>
-      <div class="transit"><b>交通</b>：老城全步行；Ulriken 搭 2 或 3 號公車轉纜車上山。</div>
-      <div id="stops-d9"></div>
     </div>
   </section>
 
   <div class="leg">
-    <div class="leg-title">跨區交通③｜挪威 → 瑞典：飛機，不是火車（9/21）</div>
-    <p>為什麼不搭火車？奧斯陸→斯德哥爾摩確實有直達火車（約 5.5h），但我們人在<b>卑爾根</b>——先翻山回奧斯陸再轉車全程要 12 小時以上。直飛 <b>卑爾根 BGO → 斯德哥爾摩 ARN 約 1h25</b>（SAS／Norwegian 每日多班），建議訂 9/21 上午 08:00–10:00 的班次。注意：Norwegian 是廉航，<b>託運行李要加購</b>；SAS 依票種而定，訂票時看清楚。動線：Zander K 旁 Bybanen 輕軌 1 號線 45 分直達卑爾根機場 → 落地後 Arlanda Express 18 分進中央車站（先網購較便宜）。</p>
+    <div class="leg-title">跨區交通③｜卑爾根 → 特羅姆瑟：飛進北極圈（9/20）</div>
+    <p><b>Widerøe 每日直飛約 3 班、2 小時 05 分</b>，最早 07:50 起飛、09:55 抵達——訂這班，當天下午就能玩。Zander K 旁 Bybanen 輕軌 1 號線 45 分直達卑爾根機場。Widerøe 票種注意託運行李是否內含。特羅姆瑟機場進市區：機場快線巴士或市區公車約 15–20 分（Svipper App 購票，或火箭熱狗攤對面的 7-11 買實體票）。</p>
+  </div>
+
+  <!-- ==================== TROMSO ==================== -->
+  <section class="chapter">
+    <div class="ch-head"><span class="no">03</span><h2>特羅姆瑟・北極圈</h2><span class="span">9/20–9/22・2 晚</span></div>
+    <div class="ch-note">北緯 69°、極光季開跑（秋分前後活動最強）。9 月沒有雪，狗拉車是輪式訓練版；夜間近 0°C，羽絨＋毛帽手套全上。極光看不看得到憑天氣與運氣，兩晚就是給自己兩次機會。</div>
+
+    <div class="day">
+      <div class="day-head"><span class="d">9/20</span><span class="w">週日・進北極圈</span></div>
+      <div class="transit"><b>交通</b>：07:50 起飛 → 09:55 抵特羅姆瑟 → 巴士 15–20 分進市區寄行李。下午過橋玩北極大教堂＋纜車（公車 20/24/26 號過橋，或步行 25 分）。</div>
+      <div id="stops-d9"></div>
+    </div>
+    <div class="day">
+      <div class="day-head"><span class="d">9/21</span><span class="w">週一・狗狗日＋極光夜</span></div>
+      <div class="transit"><b>交通</b>：哈士奇團與極光團都含市區接送（訂位時選 pickup 點）；中間空檔市區步行即可。</div>
+      <div id="stops-d10"></div>
+    </div>
+  </section>
+
+  <div class="leg">
+    <div class="leg-title">跨區交通④｜特羅姆瑟 → 斯德哥爾摩：飛機（9/22）</div>
+    <p>SAS 有直飛（1h55）但<b>每週僅數班、多在一／四／五／六</b>——9/22 是週二，大概率要搭<b>經奧斯陸轉機</b>的班次（SAS／Norwegian，全程約 3.5–4.5 小時）。訂上午出發、下午 2–3 點前抵達 ARN 的組合，落地後 <b>Arlanda Express 18 分</b>進中央車站（先網購較便宜），傍晚還能逛老城。訂票時把 9/20＋9/22 兩段一起比價。</p>
   </div>
 
   <!-- ==================== SWEDEN ==================== -->
   <section class="chapter">
-    <div class="ch-head"><span class="no">03</span><h2>瑞典・斯德哥爾摩</h2><span class="span">9/21–9/25・4 晚</span></div>
-    <div class="ch-note">交通票券：SL 72 小時票（地鐵＋公車＋7 號電車全包）；Arlanda Express 提早網路購票較便宜。</div>
+    <div class="ch-head"><span class="no">04</span><h2>瑞典・斯德哥爾摩</h2><span class="span">9/22–9/25・3 晚</span></div>
+    <div class="ch-note">交通票券：SL 72 小時票（地鐵＋公車＋7 號電車全包）。緊湊版：抵達傍晚＋兩個整天，市區精華全保留（Vaxholm 群島與皇后島宮已讓位給特羅姆瑟）。</div>
 
     <div class="day">
-      <div class="day-head"><span class="d">9/21</span><span class="w">週一</span></div>
-      <div class="transit"><b>交通</b>：Zander K 旁 Bybanen 輕軌 1 號線 → 卑爾根機場（45 分）→ 早班機飛 ARN（1.5 小時）→ Arlanda Express 18 分進中央車站 → 步行 8 分到旅館。下午老城步行。</div>
-      <div id="stops-d10"></div>
-    </div>
-    <div class="day">
-      <div class="day-head"><span class="d">9/22</span><span class="w">週二・Djurgården 島</span></div>
-      <div class="transit"><b>交通</b>：7 號電車直達 Djurgården（SL 票可搭）。</div>
+      <div class="day-head"><span class="d">9/22</span><span class="w">週二・傍晚抵達</span></div>
+      <div class="transit"><b>交通</b>：Arlanda Express 進中央車站 → 步行 8 分到旅館。傍晚地鐵一站（或步行 15 分）到老城散步、吃晚餐。</div>
       <div id="stops-d11"></div>
     </div>
     <div class="day">
-      <div class="day-head"><span class="d">9/23</span><span class="w">週三・二選一</span></div>
-      <div class="transit"><b>交通</b>：Vaxholm——Strömkajen 碼頭搭 Waxholmsbolaget 渡輪約 1 小時（另購票）；皇后島宮——市政廳碼頭搭船或地鐵＋公車。</div>
+      <div class="day-head"><span class="d">9/23</span><span class="w">週三・Djurgården 島</span></div>
+      <div class="transit"><b>交通</b>：7 號電車直達 Djurgården（SL 票可搭）。</div>
       <div id="stops-d12"></div>
     </div>
     <div class="day">
-      <div class="day-head"><span class="d">9/24</span><span class="w">週四</span></div>
-      <div class="transit"><b>交通</b>：地鐵至 Slussen → Södermalm 步行；地鐵藝術站用同一張 SL 票逐站跳。</div>
+      <div class="day-head"><span class="d">9/24</span><span class="w">週四・老城＋南島一日精華</span></div>
+      <div class="transit"><b>交通</b>：上午老城（衛兵交接約 12:15）→ 地鐵至 Slussen 進 Södermalm → 地鐵藝術站巡禮 → Östermalmstorg 站採買收尾。</div>
       <div id="stops-d13"></div>
     </div>
     <div class="day">
@@ -263,28 +266,30 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
 
   <!-- ==================== CHECKLIST ==================== -->
   <section class="chapter">
-    <div class="ch-head"><span class="no">04</span><h2>行前清單</h2><span class="span">按急迫順序</span></div>
+    <div class="ch-head"><span class="no">05</span><h2>行前清單</h2><span class="span">按急迫順序</span></div>
     <div class="check">
       <h3>要訂的（由急到緩）</h3>
       <ol>
-        <li>Flåm 住宿（房源最少，最急）——A：Heimly ／ B：Fretheim，手冊裡二選一</li>
-        <li>挪威縮影套票：Vy 火車＋Flåmsbana＋遊船＋Stegastein 巴士（visitflam.com）</li>
-        <li>DFDS 渡輪艙房（哥本哈根→奧斯陸，越早越便宜，可考慮海景艙）</li>
-        <li>卑爾根 → 斯德哥爾摩早班機（SAS／Norwegian）</li>
-        <li>城市住宿：哥本哈根 A／B 擇一 3 晚・Citybox Oslo 2 晚・Zander K 卑爾根 2 晚・Generator Stockholm 私人雙人房 4 晚（全數 Google 評分 4★ 以上）</li>
-        <li>Tivoli、Vasa 等門票出發前一週線上買即可</li>
-        <li>餐廳訂位：Maple（4.9★ 熱門，開放訂位就搶 9/13 傍晚場）、Kødbyens Fiskebar（9/14 晚）——出發前 2–4 週線上訂</li>
-        <li>交通票券到當地用 App 買：CPH City Pass Small・奧斯陸 Ruter・斯德哥爾摩 SL 72h；Arlanda Express 可先網購</li>
+        <li class="warn">⚠️ 挪威縮影日期改為 9/17（Day 1）＋ 9/18（Day 2）——如果已經照舊版訂了 9/18 出發的 Vy 票，立刻改票</li>
+        <li>Vy 官網訂 9/17「Oslo → Flåm」一張票（自動含 Flåmsbana；Lavpris 會賣完，最急）</li>
+        <li>Flåm 住宿 9/17 一晚（A Heimly／B Fretheim 二選一）</li>
+        <li>visitflam.com：9/17 Stegastein 巴士＋9/18 Nærøyfjord 遊船</li>
+        <li>DFDS 渡輪：9/14 哥本哈根 → 奧斯陸艙房</li>
+        <li>內陸機票兩段一起訂：9/20 卑爾根→特羅姆瑟（Widerøe 07:50 直飛最理想）＋ 9/22 特羅姆瑟→斯德哥爾摩（多半經奧斯陸轉，選上午班）</li>
+        <li>特羅姆瑟活動：秋季哈士奇拉車（Tromsø Villmarkssenter／Kvaløya Husky，氣溫低於 13°C 才出團）＋ 9/21 晚追極光團</li>
+        <li>城市住宿：哥本哈根 A／B 擇一 2 晚・Citybox Oslo 2 晚・Zander K 卑爾根 2 晚・Thon Polar 特羅姆瑟 2 晚・Generator 斯德哥爾摩 3 晚（全數 Google 評分 4★ 以上）</li>
+        <li>餐廳訂位：Maple 改訂 9/12（六）17:30 場、Kødbyens Fiskebar 訂 9/13（日）晚</li>
+        <li>Tivoli、Vasa 等門票出發前一週線上買；交通票券到當地 App 買（CPH City Pass・Ruter・SL 72h・Svipper）；Arlanda Express 先網購</li>
       </ol>
-      <div class="budget"><b>住宿總帳</b>：12 晚省錢版約 NT$52,000–65,000（兩人合計），低於預算 NT$72,000；差額剛好覆蓋 Fretheim 升級＋DFDS 海景艙。價位為近期常見行情，下訂以實際查價為準。</div>
+      <div class="budget"><b>住宿總帳</b>：12 晚（哥本哈根 2＋奧斯陸 2＋Flåm 1＋卑爾根 2＋特羅姆瑟 2＋斯德哥爾摩 3）約 NT$54,000–68,000（兩人合計），仍在預算內；另加兩段內陸機票每人約 NT$3,000–8,000（越早訂越便宜）。價位為近期常見行情，下訂以實際查價為準。</div>
     </div>
     <div class="check">
       <h3>已確認・不用辦</h3>
       <ol>
         <li class="done">機票已開票（泰航，Richart 卡刷全額 → 不便險生效）</li>
         <li class="done">曼谷純轉機：免簽證、免 TDAC</li>
-        <li class="done">申根免簽 90 天，ETIAS 2026 年底才上路，這趟不用</li>
-        <li class="done">全程大眾運輸，不租車（城際移動都是渡輪／景觀鐵路／飛機，租車接不上）</li>
+        <li class="done">申根免簽 90 天，ETIAS 2026 年底才上路；特羅姆瑟是挪威國內線，不用再過護照查驗</li>
+        <li class="done">城市間不租車（渡輪／景觀鐵路／飛機接力，租車接不上）</li>
         <li>出發前：門號開國際漫遊（收 OTP 用）、Richart Life APP 綁定推播驗證</li>
         <li>護照效期確認至 2027 年 3 月以後</li>
         <li>哥本哈根入境走 EES 生物辨識建檔（首次較慢，預留時間）</li>
@@ -292,11 +297,11 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
     </div>
     <div class="check">
       <h3>天氣與打包</h3>
-      <div class="weather">哥本哈根 15–18°C → 斯德哥爾摩 13–16°C，一路變涼；Myrdal 山區可能 2–8°C，卑爾根一半日子有雨。三層洋蔥式：排汗底層＋刷毛中層＋<b>防水防風外套</b>，防水鞋、毛帽手套（山區與遊船甲板用）。日落 19:30 → 18:40，戶外行程 17 點前收尾。</div>
+      <div class="weather">哥本哈根 15–18°C → 卑爾根多雨 → <b>特羅姆瑟 9 月下旬白天 5–9°C、夜間追極光可能近 0°C</b> → 斯德哥爾摩 13–16°C。三層洋蔥式：排汗底層＋刷毛中層＋<b>防水防風外套</b>，特羅姆瑟夜晚再加羽絨；防水鞋、毛帽手套必備（山區、遊船甲板、極光夜用）。日落 19:30 → 18:40，極光要 21 點後天全黑才開始等。</div>
     </div>
   </section>
 
-  <footer>KC 的北歐手冊 v8（遊記連結版）・由 Claude 整理・標記完記得匯出貼回對話</footer>
+  <footer>KC 的北歐手冊 v9（特羅姆瑟版）・由 Claude 整理・標記完記得匯出貼回對話</footer>
 </div>
 
 <!-- sticky bar -->
@@ -325,57 +330,69 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
 
 <script>
 const STOPS = [
-  // Denmark
-  {id:"h_cph_a", day:"d1", date:"9/12", name:"住宿 A：Next House Copenhagen 私人雙人房 × 3 晚", kind:"住宿", stay:true, book:true, desc:"4.3★（4,507 則）頂級青年旅館的私人房型，離中央車站與 Tivoli 步行 5–8 分；公共空間大、頂樓廚房有景。約 DKK 900–1,200（NT$4,300–5,700／晚）。與 B 二選一。"},
-  {id:"h_cph_b", day:"d1", date:"9/12", name:"住宿 B：CityHub Copenhagen 雙人 Pod × 3 晚", kind:"住宿", stay:true, book:true, desc:"4.8★（2,171 則）全哥本哈根評分最高的平價選項：Queen 床雙人艙房、衛浴共用但極乾淨、附桑拿；位於 Vesterbro，門口公車到中央車站約 10 分。約 DKK 700–1,000（NT$3,300–4,700／晚）。與 A 二選一。"},
+  // ===== Denmark 9/12 =====
+  {id:"h_cph_a", day:"d1", date:"9/12", name:"住宿 A：Next House Copenhagen 私人雙人房 × 2 晚", kind:"住宿", stay:true, book:true, desc:"4.3★（4,507 則）頂級青年旅館的私人房型，離中央車站與 Tivoli 步行 5–8 分；公共空間大、頂樓廚房有景。約 DKK 900–1,200（NT$4,300–5,700／晚）。與 B 二選一。"},
+  {id:"h_cph_b", day:"d1", date:"9/12", name:"住宿 B：CityHub Copenhagen 雙人 Pod × 2 晚", kind:"住宿", stay:true, book:true, desc:"4.8★（2,171 則）全哥本哈根評分最高的平價選項：Queen 床雙人艙房、衛浴共用但極乾淨、附桑拿；位於 Vesterbro，門口公車到中央車站約 10 分。約 DKK 700–1,000（NT$3,300–4,700／晚）。與 A 二選一。"},
   {id:"nyhavn", day:"d1", date:"9/12", name:"Nyhavn 新港運河", kind:"景點", desc:"彩色連排屋與帆船碼頭，落地首日輕鬆散步首選；安徒生曾住 20 號。", blog:"https://travelwithjose.com/tourist-attraction-in-copenhagen/", bl:"📖 中文遊記 ›"},
-  {id:"lille", day:"d1", date:"9/12", name:"Lille Bakery（早午餐）", kind:"美食", desc:"4.4★（1,391 則）Refshaleøen 廢船廠區的名店烘焙坊，酸種麵包配蛋、大黃塔。從 Nyhavn 搭港灣巴士過去。注意：週一二公休，你們在丹麥的日子只有 9/12、9/13 開，所以排抵達日。", blog:"https://www.everydayobject.us/eo-copenhagan-bread-cafe/", bl:"📖 中文遊記 ›"},
+  {id:"lille", day:"d1", date:"9/12", name:"Lille Bakery（早午餐）", kind:"美食", desc:"4.4★（1,391 則）Refshaleøen 廢船廠區的名店烘焙坊，酸種麵包配蛋、大黃塔。從 Nyhavn 搭港灣巴士過去。注意：週一二公休，你們在丹麥只有 9/12、9/13 開，所以卡死在抵達日。", blog:"https://www.everydayobject.us/eo-copenhagan-bread-cafe/", bl:"📖 中文遊記 ›"},
   {id:"canal", day:"d1", date:"9/12", name:"運河遊船（1 小時）", kind:"體驗", desc:"從新港出發繞港區與美人魚像，坐著看城市、順便撐過時差最累的下午。", blog:"https://shareidregulation.com/copenhagen-self-guided-tour-5d4n/", bl:"📖 中文遊記 ›"},
   {id:"stroget", day:"d1", date:"9/12", name:"Strøget 步行街", kind:"景點", desc:"歐洲最長步行街之一，丹麥設計品牌（HAY、Illums Bolighus）都在這條線上。", blog:"https://jennieyuan.com/%E4%B8%B9%E9%BA%A5-%E5%93%A5%E6%9C%AC%E5%93%88%E6%A0%B9-day-2/", bl:"📖 中文遊記 ›"},
-  {id:"hay", day:"d1", date:"9/12", name:"HAY House 旗艦店", kind:"購物", desc:"4.4★，Østergade 61 二樓——就在步行街上，逛 Strøget 順路上樓。丹麥設計迷的聖地，小物到家具都有，行李箱空間先想好。", blog:"https://www.threads.com/@sunny__roger/post/C8b1GQVMLaW", bl:"📖 中文分享 ›"},
-  {id:"gasoline", day:"d1", date:"9/12", name:"Gasoline Grill（晚餐）", kind:"美食", desc:"4.5★（6,683 則）開在營運中加油站裡的傳奇漢堡，Landgreven 創始店離 Kongens Nytorv 5 分鐘。抵達日晚餐吃這種不用動腦的最舒服，賣完即收。", blog:"https://miffycares.com/2025/02/24/copenhagen-must-eat-list/", bl:"📖 中文遊記 ›"},
-  {id:"april", day:"d2", date:"9/13", name:"April Coffee（早晨咖啡）", kind:"美食", desc:"4.5★ 精品咖啡界的 fine dining，Pilestræde 39 就在圓塔旁巷內。09:00 開門，當第二天的起手式剛好。", blog:"https://vocus.cc/article/69948cf3fd89780001299e04", bl:"📖 中文遊記 ›"},
-  {id:"rosenborg", day:"d2", date:"9/13", name:"羅森堡宮", kind:"景點", desc:"文藝復興城堡，地下室有丹麥王冠珠寶，花園免費。", blog:"https://lillian.tw/kobenhavn/", bl:"📖 中文遊記 ›"},
-  {id:"torvehallerne", day:"d2", date:"9/13", name:"Torvehallerne 市場（午餐）", kind:"美食", desc:"4.5★（16,520 則）玻璃屋美食市場，smørrebrød 開放三明治、豬肉堡、海鮮攤任選——就在羅森堡宮旁的 Nørreport，動線零成本。", blog:"https://ahhhzz.com/torvehallerne/", bl:"📖 中文遊記 ›"},
-  {id:"rundetaarn", day:"d2", date:"9/13", name:"圓塔 Rundetårn", kind:"景點", desc:"1642 年天文塔，沿螺旋斜坡走上頂端看老城屋頂，20 分鐘搞定。", blog:"https://hpyuann.com/denmark-copenhagen-itinerary", bl:"📖 中文遊記 ›"},
-  {id:"maple", day:"d2", date:"9/13", name:"Maple Casual Dining（晚餐・先訂位）", kind:"美食", book:true, desc:"4.9★（1,925 則）——全手冊評分最高的一家。Vesterbrogade 24 的平價 fine dining，四道式 tasting menu 口碑爆棚；只開 17:00–21:30。訂 17:00 或 17:30 場，飯後走 5 分鐘進 Tivoli 看夜景，完美收尾。", blog:"https://www.google.com/maps/search/?api=1&query=Maple%20Casual%20Dining%20Copenhagen", bl:"🌐 Google 評價 ›"},
-  {id:"tivoli", day:"d2", date:"9/13", name:"Tivoli 樂園夜景", kind:"體驗", book:true, desc:"1843 年開園、迪士尼靈感來源。傍晚入園看點燈最美，只逛不玩可買入場券。", blog:"https://strollineurope.com/copenhagen_signtseeing_mustgo/", bl:"📖 中文遊記 ›"},
-  {id:"kronborg", day:"d3", date:"9/14", name:"克倫堡 Kronborg", kind:"一日遊", desc:"UNESCO 世界遺產、《哈姆雷特》的艾辛諾爾城堡，扼守丹瑞海峽最窄處。", blog:"https://blog.kkday.com/47489/eurpoe-denmark-copenhagen-3-days-guide", bl:"📖 中文遊記 ›"},
-  {id:"louisiana", day:"d3", date:"9/14", name:"Louisiana 現代美術館", kind:"一日遊", desc:"面海的展廳與雕塑公園被稱為全球最美美術館之一，回程順路（Humlebæk 站）。", blog:"https://shareidregulation.com/copenhagen-self-guided-tour-5d4n/", bl:"📖 中文遊記 ›"},
-  {id:"fiskebar", day:"d3", date:"9/14", name:"Kødbyens Fiskebar（晚餐・先訂位）", kind:"美食", book:true, desc:"4.3★（4,764 則）肉品加工區 Kødbyen 裡的海鮮名店，生蠔、竹蟶配招牌羅勒醬。從中央車站步行 8 分，一日遊回程直接接晚餐，離旅館也近。", blog:"https://miffycares.com/2025/02/24/copenhagen-must-eat-list/", bl:"📖 中文遊記 ›"},
-  {id:"buka", day:"d4", date:"9/15", name:"BUKA（早餐）", kind:"美食", desc:"4.4★（2,144 則）開心果可頌名店，Store Kongensgade 07:00 開門——上船日早起吃一輪，外帶盒還很適合帶上渡輪當下午茶。", blog:"https://www.google.com/maps/search/?api=1&query=BUKA%20Store%20Kongensgade%2018%20Copenhagen", bl:"🌐 Google 評價 ›"},
-  {id:"christiansborg", day:"d4", date:"9/15", name:"Christiansborg 議會宮", kind:"景點", desc:"丹麥國會所在，塔樓免費登頂，是市區最高觀景點。", blog:"https://gowithmarkhazyl.com/must-visit-places-in-copenhagen/", bl:"📖 中文遊記 ›"},
-  {id:"carlsberg", day:"d4", date:"9/15", name:"嘉士伯園區 Home of Carlsberg", kind:"體驗", desc:"百年釀酒廠改建園區，含品飲；離市中心地鐵約 15 分鐘。", blog:"https://www.google.com/maps/search/?api=1&query=Home%20of%20Carlsberg%20Copenhagen", bl:"🌐 Google 評價 ›"},
-  {id:"dfds", day:"d4", date:"9/15", name:"DFDS 過夜渡輪 → 奧斯陸", kind:"交通", book:true, desc:"16:30 開船、隔日 10:00 進奧斯陸峽灣，船上住一晚省住宿。跳過的話改飛奧斯陸（約 1 小時）＋多一晚旅館。", blog:"https://yilovefly.com/dfds-ferry/", bl:"📖 中文遊記 ›"},
-  // Norway
-  {id:"h_oslo", day:"d5", date:"9/16", name:"住宿：Citybox Oslo × 2 晚", kind:"住宿", stay:true, book:true, desc:"4.2★（5,468 則），離中央車站 5 分（9/18 早班火車零壓力）、渡輪碼頭步行 15 分；有公用廚房與洗衣機。約 NOK 1,300–1,700（NT$3,900–5,100／晚）。"},
-  {id:"operahouse", day:"d5", date:"9/16", name:"奧斯陸歌劇院屋頂", kind:"景點", desc:"大理石斜坡可直接走上屋頂看海港全景，下船後第一站剛剛好。", blog:"https://365hygge.com/oslo_visit/", bl:"📖 中文遊記 ›"},
-  {id:"munch", day:"d5", date:"9/16", name:"孟克美術館 MUNCH", kind:"景點", book:true, desc:"《吶喊》真跡輪展於此，13 層新館就在歌劇院旁。", blog:"https://365hygge.com/oslo_om/", bl:"📖 中文遊記 ›"},
-  {id:"akerbrygge", day:"d5", date:"9/16", name:"Aker Brygge 海濱", kind:"景點", desc:"碼頭倉庫改建的餐廳街區，傍晚散步、吃晚餐的地方。", blog:"https://www.wilhelmchang.com/zh/oslo/", bl:"📖 中文遊記 ›"},
-  {id:"vigeland", day:"d6", date:"9/17", name:"Vigeland 雕塑公園", kind:"景點", desc:"200 多座人體雕塑的露天公園，免費，「憤怒的小孩」是招牌。", blog:"https://hamsterstraveldiary.com/oslo-attractions-guide/", bl:"📖 中文遊記 ›"},
-  {id:"bygdoy", day:"d6", date:"9/17", name:"Bygdøy 博物館半島", kind:"景點", desc:"Fram 極地船博物館（真船登艦）＋ Kon-Tiki 木筏，搭 30 路公車可達。", blog:"https://www.google.com/maps/search/?api=1&query=Fram%20Museum%20Oslo", bl:"🌐 Google 評價 ›"},
-  {id:"bergensbanen", day:"d7", date:"9/18", name:"卑爾根鐵路 Oslo → Myrdal", kind:"交通", book:true, desc:"北歐最美高原鐵路，翻越 Hardangervidda 高原，約 4.5 小時。", blog:"https://www.willstudy.tw/norway-in-a-nutshell-202/", bl:"📖 中文遊記 ›"},
-  {id:"flamsbana", day:"d7", date:"9/18", name:"Flåmsbana 高山火車", kind:"交通", book:true, desc:"一小時內從 866 公尺陡降到峽灣邊，全球最美鐵道常客，中途停 Kjosfossen 瀑布。", blog:"https://golovetraveling.com/flamsbana/", bl:"📖 中文遊記 ›"},
-  {id:"h_flam_a", day:"d7", date:"9/18", name:"住宿 A：Heimly Pensjonat（省錢版）", kind:"住宿", stay:true, book:true, desc:"峽灣第一排 4.0★，遠離郵輪人潮、晚餐口碑好；離車站步行 15 分，拖大行李較累。約 NOK 1,900–2,400（NT$5,700–7,200）。與 B 二選一。"},
-  {id:"h_flam_b", day:"d7", date:"9/18", name:"住宿 B：Fretheim Hotel（升級版）", kind:"住宿", stay:true, book:true, desc:"1870 年百年飯店 4.4★（1,381 則），出車站 2 分鐘、晚餐 buffet 出名。約 NOK 2,700–3,300，超預算兩三千，但只住一晚又在全程最美的地方——唯一小奢侈首選。與 A 二選一。"},
-  {id:"stegastein", day:"d7", date:"9/18", name:"Stegastein 觀景台（你選的方案一）", kind:"體驗", book:true, desc:"懸挑 30 公尺的玻璃端景台，俯瞰 Aurlandsfjord；Flåm 出發巴士行程約 1.5 小時。", blog:"https://www.wawa1007.com/%E3%80%90%E6%AD%90%E6%B4%B2%E6%8C%AA%E5%A8%81%E3%80%91flam%E5%BC%97%E6%8B%89%E5%A7%86%E6%99%AF%E9%BB%9E%E5%B0%8E%E8%A6%BD%EF%BC%9A%E5%88%BB%E5%8D%B0%E5%9C%A8%E5%BF%83%E8%A3%A1%E7%9A%84%E7%B5%95/", bl:"📖 中文遊記 ›"},
-  {id:"naeroyfjord", day:"d8", date:"9/19", name:"Nærøyfjord 峽灣遊船", kind:"體驗", book:true, desc:"UNESCO 世界遺產、松恩峽灣系統最窄最壯觀的支灣（最窄僅 250 公尺）。甲板很冷，毛帽必備。", blog:"https://eddyhsu.com/flam/", bl:"📖 中文遊記 ›"},
-  {id:"h_bergen", day:"d8", date:"9/19", name:"住宿：Zander K Hotel 卑爾根 × 2 晚", kind:"住宿", stay:true, book:true, desc:"4.2★（2,382 則）緊鄰火車站：9/19 下火車即到、9/21 旁邊 Bybanen 輕軌直達機場；早餐評價極好、大廳咖啡免費。約 NOK 1,500–2,000（NT$4,500–6,000／晚）。"},
-  {id:"floibanen", day:"d8", date:"9/19", name:"Fløibanen 纜車夜景", kind:"體驗", desc:"8 分鐘登 Fløyen 山看卑爾根七山環抱的夜景，抵達當晚就能去。", blog:"https://mrandmrspiggy.pixnet.net/blog/post/341959080", bl:"📖 中文遊記 ›"},
-  {id:"fishmarket", day:"d9", date:"9/20", name:"卑爾根魚市", kind:"美食", desc:"1200 年代延續至今的露天魚市，鮭魚三明治、帝王蟹現點現做。", blog:"https://foodiejanetw.com/archives/2344", bl:"📖 中文遊記 ›"},
-  {id:"bryggen", day:"d9", date:"9/20", name:"Bryggen 漢薩木屋群", kind:"景點", desc:"UNESCO 世界遺產，彩色木造商館後巷藏著工作室與小店，慢慢鑽。", blog:"https://linanaland.com/%E3%80%90%E6%8C%AA%E5%A8%81%E8%87%AA%E7%94%B1%E8%A1%8C%E3%80%91day5-%E5%8D%91%E7%88%BE%E6%A0%B9%E4%B8%8Acity-walk%E5%85%A9%E5%A4%A9%E8%A1%8C%E7%A8%8B%E5%AE%89%E6%8E%92%E3%80%81%E4%BA%A4%E9%80%9A/", bl:"📖 中文遊記 ›"},
-  {id:"kode", day:"d9", date:"9/20", name:"KODE 美術館", kind:"景點", desc:"四棟館藏含孟克與挪威浪漫主義風景畫，下雨天的最佳備案。", blog:"https://www.google.com/maps/search/?api=1&query=KODE%20Kunstmuseer%20Bergen", bl:"🌐 Google 評價 ›"},
-  {id:"ulriken", day:"d9", date:"9/20", name:"Ulriken 纜車（Fløyen 之外再上一座）", kind:"體驗", desc:"卑爾根七山最高峰（643m），視野比 Fløyen 更遼闊；時間只夠一座的話二選一。", blog:"https://linanaland.com/%E3%80%90%E6%8C%AA%E5%A8%81%E8%87%AA%E7%94%B1%E8%A1%8C%E3%80%91day6-%E5%8D%91%E7%88%BE%E6%A0%B9%E4%B8%8B-%E4%B8%80%E6%AC%A1%E9%81%8E%E8%B5%B0%E5%AE%8C%E4%B8%89%E5%BA%A7%E5%A4%A7%E5%B1%B1%EF%BC%9A/", bl:"📖 中文遊記 ›"},
-  // Sweden
-  {id:"h_sto", day:"d10", date:"9/21", name:"住宿：Generator Stockholm 私人雙人房 × 4 晚", kind:"住宿", stay:true, book:true, desc:"4.4★（8,053 則），離中央車站步行 8 分——Arlanda Express 進出、每天搭地鐵都方便。務必訂「私人雙人房」非宿舍床位，毛巾確認是否需加購。約 SEK 1,300–1,800（NT$3,900–5,400／晚）。"},
-  {id:"gamlastan", day:"d10", date:"9/21", name:"Gamla Stan 老城", kind:"景點", desc:"13 世紀石板巷弄，Stortorget 彩色老屋是斯德哥爾摩明信片畫面。", blog:"https://zoebitalk.com/sweden/stockholm-malaren/stockholm/", bl:"📖 中文遊記 ›"},
-  {id:"palace", day:"d10", date:"9/21", name:"王宮＋衛兵交接", kind:"景點", desc:"600 房間的巴洛克王宮，交接儀式約 12:15（週日 13:15）。", blog:"https://justgotraveler.blog/2019/01/13/gamla-stan-half-day/", bl:"📖 中文遊記 ›"},
-  {id:"nobel", day:"d10", date:"9/21", name:"諾貝爾獎博物館", kind:"景點", desc:"就在老城廣場上，小而精，看完再去咖啡館 fika 一輪。", blog:"https://www.dcard.tw/f/travel/p/258523149", bl:"📖 中文遊記 ›"},
-  {id:"vasa", day:"d11", date:"9/22", name:"Vasa 沉船博物館", kind:"景點", book:true, desc:"1628 年首航 20 分鐘即沉、幾近完整打撈的戰艦，斯德哥爾摩無懸念第一名。", blog:"https://lillian.tw/vasa-museum/", bl:"📖 中文遊記 ›"},
-  {id:"skansen", day:"d11", date:"9/22", name:"Skansen 露天博物館", kind:"景點", desc:"全球第一座露天博物館，北歐動物區有駝鹿與狼獾。", blog:"https://hamsterstraveldiary.com/stockholm-itinerary-attractions/", bl:"📖 中文遊記 ›"},
-  {id:"abba", day:"d11", date:"9/22", name:"ABBA 博物館", kind:"體驗", desc:"互動式展館，可以進錄音室跟全息投影同台，歌迷限定的快樂。", blog:"https://hamsterstraveldiary.com/%E7%91%9E%E5%85%B8%E8%87%AA%E7%94%B1%E8%A1%8C%EF%BD%9C%E6%96%AF%E5%BE%B7%E5%93%A5%E7%88%BE%E6%91%A9%E6%97%85%E9%81%8A-top8%E5%BF%85%E8%A8%AA%E6%99%AF%E9%BB%9E%EF%BC%8B%E4%BA%A4%E9%80%9A%E8%B7%AF/", bl:"📖 中文遊記 ›"},
-  {id:"vaxholm", day:"d12", date:"9/23", name:"Vaxholm 群島一日遊", kind:"一日遊", desc:"市中心搭渡輪 1 小時，群島入門款：木屋小鎮＋要塞＋肉桂捲名店。船上風大。", blog:"https://lillian.tw/stockholm/", bl:"📖 中文遊記 ›"},
-  {id:"drottningholm", day:"d12", date:"9/23", name:"Drottningholm 皇后島宮（替代案）", kind:"一日遊", desc:"UNESCO、瑞典王室現居宮殿，搭復古蒸汽船前往；與 Vaxholm 二選一。", blog:"https://www.google.com/maps/search/?api=1&query=Drottningholm%20Palace%20Stockholm", bl:"🌐 Google 評價 ›"},
+  {id:"hay", day:"d1", date:"9/12", name:"HAY House 旗艦店", kind:"購物", desc:"4.4★，Østergade 61 二樓——就在步行街上，逛 Strøget 順路上樓。丹麥設計迷的聖地，行李箱空間先想好。", blog:"https://www.threads.com/@sunny__roger/post/C8b1GQVMLaW", bl:"📖 中文分享 ›"},
+  {id:"maple", day:"d1", date:"9/12", name:"Maple Casual Dining（晚餐・先訂位）", kind:"美食", book:true, desc:"4.9★（1,925 則）——全手冊評分最高的一家。Vesterbrogade 24 的平價 fine dining，四道式 tasting menu 口碑爆棚；只開 17:00–21:30。改訂 9/12（六）17:30 場：時差日吃完剛好回旅館早睡，店離旅館也近。", blog:"https://www.google.com/maps/search/?api=1&query=Maple%20Casual%20Dining%20Copenhagen", bl:"🌐 Google 評價 ›"},
+  // ===== Denmark 9/13 =====
+  {id:"kronborg", day:"d2", date:"9/13", name:"克倫堡 Kronborg", kind:"一日遊", desc:"UNESCO 世界遺產、《哈姆雷特》的艾辛諾爾城堡，扼守丹瑞海峽最窄處。週日 11:00 開門。", blog:"https://blog.kkday.com/47489/eurpoe-denmark-copenhagen-3-days-guide", bl:"📖 中文遊記 ›"},
+  {id:"louisiana", day:"d2", date:"9/13", name:"Louisiana 現代美術館", kind:"一日遊", desc:"面海的展廳與雕塑公園被稱為全球最美美術館之一，回程順路（Humlebæk 站），週日開到 18:00。", blog:"https://shareidregulation.com/copenhagen-self-guided-tour-5d4n/", bl:"📖 中文遊記 ›"},
+  {id:"fiskebar", day:"d2", date:"9/13", name:"Kødbyens Fiskebar（晚餐・先訂位）", kind:"美食", book:true, desc:"4.3★（4,764 則）肉品加工區 Kødbyen 裡的海鮮名店，生蠔、竹蟶配招牌羅勒醬。一日遊回程從中央車站步行 8 分直接接晚餐。", blog:"https://miffycares.com/2025/02/24/copenhagen-must-eat-list/", bl:"📖 中文遊記 ›"},
+  {id:"tivoli", day:"d2", date:"9/13", name:"Tivoli 樂園夜景", kind:"體驗", book:true, desc:"1843 年開園、迪士尼靈感來源。晚餐後入園看點燈（約開到 22–23 點），只逛不玩可買入場券。", blog:"https://strollineurope.com/copenhagen_signtseeing_mustgo/", bl:"📖 中文遊記 ›"},
+  // ===== Denmark 9/14 =====
+  {id:"buka", day:"d3", date:"9/14", name:"BUKA（早餐）", kind:"美食", desc:"4.4★（2,144 則）開心果可頌名店，Store Kongensgade 07:00 開門——上船日早起吃一輪，外帶盒帶上渡輪當下午茶。", blog:"https://www.google.com/maps/search/?api=1&query=BUKA%20Store%20Kongensgade%2018%20Copenhagen", bl:"🌐 Google 評價 ›"},
+  {id:"april", day:"d3", date:"9/14", name:"April Coffee（早晨咖啡）", kind:"美食", desc:"4.5★ 精品咖啡界的 fine dining，Pilestræde 39 巷內，09:00 開門。上船前的最後一杯丹麥咖啡。", blog:"https://vocus.cc/article/69948cf3fd89780001299e04", bl:"📖 中文遊記 ›"},
+  {id:"rundetaarn", day:"d3", date:"9/14", name:"圓塔 Rundetårn", kind:"景點", desc:"1642 年天文塔，沿螺旋斜坡走上頂端看老城屋頂，20 分鐘搞定，全年無休。", blog:"https://hpyuann.com/denmark-copenhagen-itinerary", bl:"📖 中文遊記 ›"},
+  {id:"rosenborg", day:"d3", date:"9/14", name:"羅森堡宮", kind:"景點", desc:"文藝復興城堡，地下室有丹麥王冠珠寶。注意：9/14 是週一，秋季週一可能休館——出發前上官網確認，若休館就逛免費花園。", blog:"https://lillian.tw/kobenhavn/", bl:"📖 中文遊記 ›"},
+  {id:"torvehallerne", day:"d3", date:"9/14", name:"Torvehallerne 市場（午餐）", kind:"美食", desc:"4.5★（16,520 則）玻璃屋美食市場，smørrebrød 開放三明治、海鮮攤任選——就在羅森堡宮旁，上船前最後一頓丹麥午餐。", blog:"https://ahhhzz.com/torvehallerne/", bl:"📖 中文遊記 ›"},
+  {id:"gasoline", day:"d3", date:"9/14", name:"Gasoline Grill（替代午餐）", kind:"美食", desc:"4.5★（6,683 則）開在營運中加油站裡的傳奇漢堡，Landgreven 創始店 11:00 開賣、賣完即收。與 Torvehallerne 擇一當上船日午餐。", blog:"https://miffycares.com/2025/02/24/copenhagen-must-eat-list/", bl:"📖 中文遊記 ›"},
+  {id:"dfds", day:"d3", date:"9/14", name:"DFDS 過夜渡輪 → 奧斯陸", kind:"交通", book:true, desc:"16:30 開船、隔日 10:00 進奧斯陸峽灣，船上住一晚省住宿。艙房越早訂越便宜，建議海景艙。", blog:"https://yilovefly.com/dfds-ferry/", bl:"📖 中文遊記 ›"},
+  // ===== Norway 9/15 =====
+  {id:"h_oslo", day:"d4", date:"9/15", name:"住宿：Citybox Oslo × 2 晚", kind:"住宿", stay:true, book:true, desc:"4.2★（5,468 則），離中央車站 5 分（9/17 早班火車零壓力）、渡輪碼頭步行 15 分；有公用廚房與洗衣機。約 NOK 1,300–1,700（NT$3,900–5,100／晚）。"},
+  {id:"operahouse", day:"d4", date:"9/15", name:"奧斯陸歌劇院屋頂", kind:"景點", desc:"大理石斜坡可直接走上屋頂看海港全景，下船後第一站剛剛好。", blog:"https://365hygge.com/oslo_visit/", bl:"📖 中文遊記 ›"},
+  {id:"munch", day:"d4", date:"9/15", name:"孟克美術館 MUNCH（吶喊）", kind:"景點", book:true, desc:"《吶喊》的家：館藏多個版本每小時輪展一幅（畫作怕光），去了一定看得到。13 層新館就在歌劇院旁。", blog:"https://365hygge.com/oslo_om/", bl:"📖 中文遊記 ›"},
+  {id:"akerbrygge", day:"d4", date:"9/15", name:"Aker Brygge 海濱", kind:"景點", desc:"碼頭倉庫改建的餐廳街區，傍晚散步、吃晚餐的地方。", blog:"https://www.wilhelmchang.com/zh/oslo/", bl:"📖 中文遊記 ›"},
+  // ===== Norway 9/16 =====
+  {id:"vigeland", day:"d5", date:"9/16", name:"Vigeland 雕塑公園", kind:"景點", desc:"200 多座人體雕塑的露天公園，免費，「憤怒的小孩」是招牌。", blog:"https://hamsterstraveldiary.com/oslo-attractions-guide/", bl:"📖 中文遊記 ›"},
+  {id:"bygdoy", day:"d5", date:"9/16", name:"Bygdøy 博物館半島", kind:"景點", desc:"Fram 極地船博物館（真船登艦）＋ Kon-Tiki 木筏——去特羅姆瑟前先看極地探險史，剛好對味。", blog:"https://www.google.com/maps/search/?api=1&query=Fram%20Museum%20Oslo", bl:"🌐 Google 評價 ›"},
+  // ===== Norway 9/17 =====
+  {id:"bergensbanen", day:"d6", date:"9/17", name:"卑爾根鐵路 Oslo → Myrdal", kind:"交通", book:true, desc:"北歐最美高原鐵路，翻越 Hardangervidda 高原，約 4.5 小時。Vy 訂「Oslo→Flåm」一張票即可。", blog:"https://www.willstudy.tw/norway-in-a-nutshell-202/", bl:"📖 中文遊記 ›"},
+  {id:"flamsbana", day:"d6", date:"9/17", name:"Flåmsbana 高山火車", kind:"交通", book:true, desc:"一小時內從 866 公尺陡降到峽灣邊，全球最美鐵道常客，中途停 Kjosfossen 瀑布。", blog:"https://golovetraveling.com/flamsbana/", bl:"📖 中文遊記 ›"},
+  {id:"h_flam_a", day:"d6", date:"9/17", name:"住宿 A：Heimly Pensjonat（省錢版）", kind:"住宿", stay:true, book:true, desc:"峽灣第一排 4.0★，遠離郵輪人潮、晚餐口碑好；離車站步行 15 分，拖大行李較累。約 NOK 1,900–2,400（NT$5,700–7,200）。與 B 二選一。"},
+  {id:"h_flam_b", day:"d6", date:"9/17", name:"住宿 B：Fretheim Hotel（升級版）", kind:"住宿", stay:true, book:true, desc:"1870 年百年飯店 4.4★（1,381 則），出車站 2 分鐘、晚餐 buffet 出名。約 NOK 2,700–3,300，超預算兩三千，但只住一晚又在全程最美的地方——唯一小奢侈首選。與 A 二選一。"},
+  {id:"stegastein", day:"d6", date:"9/17", name:"Stegastein 觀景台（你選的方案一）", kind:"體驗", book:true, desc:"懸挑 30 公尺的玻璃端景台，俯瞰 Aurlandsfjord；Flåm 出發巴士行程約 1.5 小時，配 14:10 抵達選 15:00 前後場次。", blog:"https://www.wawa1007.com/%E3%80%90%E6%AD%90%E6%B4%B2%E6%8C%AA%E5%A8%81%E3%80%91flam%E5%BC%97%E6%8B%89%E5%A7%86%E6%99%AF%E9%BB%9E%E5%B0%8E%E8%A6%BD%EF%BC%9A%E5%88%BB%E5%8D%B0%E5%9C%A8%E5%BF%83%E8%A3%A1%E7%9A%84%E7%B5%95/", bl:"📖 中文遊記 ›"},
+  // ===== Norway 9/18 =====
+  {id:"naeroyfjord", day:"d7", date:"9/18", name:"Nærøyfjord 峽灣遊船", kind:"體驗", book:true, desc:"UNESCO 世界遺產、松恩峽灣系統最窄最壯觀的支灣（最窄僅 250 公尺）。甲板很冷，毛帽必備。", blog:"https://eddyhsu.com/flam/", bl:"📖 中文遊記 ›"},
+  {id:"h_bergen", day:"d7", date:"9/18", name:"住宿：Zander K Hotel 卑爾根 × 2 晚", kind:"住宿", stay:true, book:true, desc:"4.2★（2,382 則）緊鄰火車站：9/18 下火車即到、9/20 旁邊 Bybanen 輕軌直達機場；早餐評價極好、大廳咖啡免費。約 NOK 1,500–2,000（NT$4,500–6,000／晚）。"},
+  {id:"floibanen", day:"d7", date:"9/18", name:"Fløibanen 纜車夜景", kind:"體驗", desc:"8 分鐘登 Fløyen 山看卑爾根七山環抱的夜景，抵達當晚就能去。", blog:"https://mrandmrspiggy.pixnet.net/blog/post/341959080", bl:"📖 中文遊記 ›"},
+  // ===== Norway 9/19 =====
+  {id:"fishmarket", day:"d8", date:"9/19", name:"卑爾根魚市", kind:"美食", desc:"1200 年代延續至今的露天魚市，鮭魚三明治、帝王蟹現點現做，週六最熱鬧。", blog:"https://foodiejanetw.com/archives/2344", bl:"📖 中文遊記 ›"},
+  {id:"bryggen", day:"d8", date:"9/19", name:"Bryggen 漢薩木屋群", kind:"景點", desc:"UNESCO 世界遺產，彩色木造商館後巷藏著工作室與小店，慢慢鑽。", blog:"https://linanaland.com/%E3%80%90%E6%8C%AA%E5%A8%81%E8%87%AA%E7%94%B1%E8%A1%8C%E3%80%91day5-%E5%8D%91%E7%88%BE%E6%A0%B9%E4%B8%8Acity-walk%E5%85%A9%E5%A4%A9%E8%A1%8C%E7%A8%8B%E5%AE%89%E6%8E%92%E3%80%81%E4%BA%A4%E9%80%9A/", bl:"📖 中文遊記 ›"},
+  {id:"kode", day:"d8", date:"9/19", name:"KODE 美術館", kind:"景點", desc:"四棟館藏含孟克與挪威浪漫主義風景畫，下雨天的最佳備案。", blog:"https://www.google.com/maps/search/?api=1&query=KODE%20Kunstmuseer%20Bergen", bl:"🌐 Google 評價 ›"},
+  {id:"ulriken", day:"d8", date:"9/19", name:"Ulriken 纜車（Fløyen 之外再上一座）", kind:"體驗", desc:"卑爾根七山最高峰（643m），視野比 Fløyen 更遼闊；時間只夠一座的話二選一。", blog:"https://linanaland.com/%E3%80%90%E6%8C%AA%E5%A8%81%E8%87%AA%E7%94%B1%E8%A1%8C%E3%80%91day6-%E5%8D%91%E7%88%BE%E6%A0%B9%E4%B8%8B-%E4%B8%80%E6%AC%A1%E9%81%8E%E8%B5%B0%E5%AE%8C%E4%B8%89%E5%BA%A7%E5%A4%A7%E5%B1%B1%EF%BC%9A/", bl:"📖 中文遊記 ›"},
+  // ===== Tromsø 9/20 =====
+  {id:"h_tromso", day:"d9", date:"9/20", name:"住宿：Thon Hotel Polar 特羅姆瑟 × 2 晚", kind:"住宿", stay:true, book:true, desc:"4.2★（1,029 則）市中心 Grønnegata 上，含北歐式早餐、全日咖啡茶休息室，離港口與各團集合點都是步行圈。約 NOK 1,500–1,900（NT$4,500–5,700／晚）。想升級可看港邊的 Clarion The Edge 4.4★。"},
+  {id:"tr_cathedral", day:"d9", date:"9/20", name:"北極大教堂 Arctic Cathedral", kind:"景點", desc:"1965 年的三角形地標教堂，像冰山也像曬魚架，過特羅姆瑟大橋即達；門票約 NOK 80，外觀拍照也夠震撼。", blog:"https://memoriesontheroad.com/norway-tromso/", bl:"📖 中文遊記 ›"},
+  {id:"tr_cable", day:"d9", date:"9/20", name:"Fjellheisen 纜車", kind:"體驗", book:true, desc:"登 Storsteinen（421m）看北極圈城市、峽灣與大橋全景——黃昏上山最美，天黑後留在山上就是極光第一觀測點。就在北極大教堂後方。", blog:"https://lilianyolo.wordpress.com/2025/05/08/%E6%8C%AA%E5%A8%81%EF%BD%9C%E7%89%B9%E7%BE%85%E5%A7%86%E7%91%9F%E8%87%AA%E7%94%B1%E8%A1%8C%EF%BC%9A%E5%B8%82%E5%8D%80%E6%8E%A2%E7%B4%A2%E3%80%81%E5%BF%85%E5%8E%BB%E6%99%AF%E9%BB%9E%E8%88%87%E5%9C%A8/", bl:"📖 中文遊記 ›"},
+  // ===== Tromsø 9/21 =====
+  {id:"tr_husky", day:"d10", date:"9/21", name:"秋季哈士奇拉車＋犬舍（本次主菜）", kind:"體驗", book:true, desc:"9–11 月雪季前的訓練期：由哈士奇隊拉著輪式車穿越金黃秋色，含犬舍導覽與數百隻哈士奇＋幼犬互動（Tromsø Villmarkssenter／Kvaløya Husky）。氣溫低於 13°C 才出團——9 月下旬通常沒問題，但暖天可能取消，訂可免費改期的票。", blog:"https://www.google.com/maps/search/?api=1&query=Tromso%20Villmarkssenter", bl:"🌐 Google 評價 ›"},
+  {id:"tr_polaria", day:"d10", date:"9/21", name:"Polaria 極地水族館／極地博物館", kind:"景點", desc:"狗拉車與極光團之間的空檔備案：看髯海豹餵食，或到極地博物館看 Amundsen 探險史；市區步行可達。", blog:"https://daisy20290.com/norway-tromso-trave/", bl:"📖 中文遊記 ›"},
+  {id:"tr_aurora", day:"d10", date:"9/21", name:"追極光團（夜間）", kind:"體驗", book:true, desc:"9 月下旬極光季開跑、秋分前後活動特別強。跟有經驗的追光團開車找晴空（含保暖裝、熱飲、篝火），比自己守在市區命中率高得多；看不看得到終究憑運氣，晚上 21 點後天全黑才開始。", blog:"https://vocus.cc/article/6960dd16fd897800013f3fc3", bl:"📖 中文遊記 ›"},
+  // ===== Stockholm 9/22 =====
+  {id:"h_sto", day:"d11", date:"9/22", name:"住宿：Generator Stockholm 私人雙人房 × 3 晚", kind:"住宿", stay:true, book:true, desc:"4.4★（8,053 則），離中央車站步行 8 分——Arlanda Express 進出、每天搭地鐵都方便。務必訂「私人雙人房」非宿舍床位。約 SEK 1,300–1,800（NT$3,900–5,400／晚）。"},
+  {id:"gamlastan", day:"d11", date:"9/22", name:"Gamla Stan 老城（傍晚散步）", kind:"景點", desc:"13 世紀石板巷弄，Stortorget 彩色老屋是斯德哥爾摩明信片畫面。抵達日傍晚來剛好：遊客散去、燈亮起來，順便吃晚餐。", blog:"https://zoebitalk.com/sweden/stockholm-malaren/stockholm/", bl:"📖 中文遊記 ›"},
+  // ===== Stockholm 9/23 =====
+  {id:"vasa", day:"d12", date:"9/23", name:"Vasa 沉船博物館", kind:"景點", book:true, desc:"1628 年首航 20 分鐘即沉、幾近完整打撈的戰艦，斯德哥爾摩無懸念第一名。館內恆溫 18–20°C 記得帶件外套。", blog:"https://lillian.tw/vasa-museum/", bl:"📖 中文遊記 ›"},
+  {id:"skansen", day:"d12", date:"9/23", name:"Skansen 露天博物館", kind:"景點", desc:"全球第一座露天博物館，北歐動物區有駝鹿與狼獾。", blog:"https://hamsterstraveldiary.com/stockholm-itinerary-attractions/", bl:"📖 中文遊記 ›"},
+  {id:"abba", day:"d12", date:"9/23", name:"ABBA 博物館", kind:"體驗", desc:"互動式展館，可以進錄音室跟全息投影同台，歌迷限定的快樂。", blog:"https://hamsterstraveldiary.com/%E7%91%9E%E5%85%B8%E8%87%AA%E7%94%B1%E8%A1%8C%EF%BD%9C%E6%96%AF%E5%BE%B7%E5%93%A5%E7%88%BE%E6%91%A9%E6%97%85%E9%81%8A-top8%E5%BF%85%E8%A8%AA%E6%99%AF%E9%BB%9E%EF%BC%8B%E4%BA%A4%E9%80%9A%E8%B7%AF/", bl:"📖 中文遊記 ›"},
+  // ===== Stockholm 9/24 =====
+  {id:"palace", day:"d13", date:"9/24", name:"王宮＋衛兵交接", kind:"景點", desc:"600 房間的巴洛克王宮，交接儀式約 12:15。上午先逛老城巷弄再看交接，動線最順。", blog:"https://justgotraveler.blog/2019/01/13/gamla-stan-half-day/", bl:"📖 中文遊記 ›"},
+  {id:"nobel", day:"d13", date:"9/24", name:"諾貝爾獎博物館", kind:"景點", desc:"就在老城廣場上，小而精（Dcard 網友誠實評：場館不大），看完再去咖啡館 fika 一輪。", blog:"https://www.dcard.tw/f/travel/p/258523149", bl:"📖 中文遊記 ›"},
   {id:"sodermalm", day:"d13", date:"9/24", name:"Södermalm 文青區", kind:"景點", desc:"二手店、咖啡館與 Monteliusvägen 步道——眺望老城天際線的最佳角度。", blog:"https://zoebitalk.com/sweden/stockholm-malaren/stockholm/", bl:"📖 中文遊記 ›"},
   {id:"fotografiska", day:"d13", date:"9/24", name:"Fotografiska 攝影博物館", kind:"景點", desc:"港邊倉庫改建的攝影殿堂，頂樓咖啡館視野一流，開到深夜。", blog:"https://www.google.com/maps/search/?api=1&query=Fotografiska%20Stockholm", bl:"🌐 Google 評價 ›"},
   {id:"metroart", day:"d13", date:"9/24", name:"地鐵藝術站巡禮", kind:"體驗", desc:"「全球最長藝術廊」：T-Centralen、Solna Centrum 等岩洞彩繪站，一張地鐵票走完。", blog:"https://daisy20290.com/sweden-stockholm-travel/", bl:"📖 中文遊記 ›"},
@@ -389,18 +406,16 @@ const ROUTES = {
   lille:{v:"⛴️ 港灣巴士回新港，接運河遊船",t:"約 20 分",o:"Lille Bakery Refshalevej Copenhagen",d:"Nyhavn Copenhagen",m:"transit"},
   canal:{v:"🚶 下船步行往步行街",t:"約 5 分",o:"Nyhavn Copenhagen",d:"Strøget Copenhagen",m:"walking"},
   stroget:{v:"🚶 就在步行街上，Østergade 61 上二樓",t:"約 2 分",o:"Strøget Copenhagen",d:"HAY House Østergade 61 Copenhagen",m:"walking"},
-  hay:{v:"🚶 步行往 Landgreven 加油站",t:"約 6 分",o:"HAY House Østergade 61 Copenhagen",d:"Gasoline Grill Landgreven 10 Copenhagen",m:"walking"},
-  gasoline:{v:"🚇 吃飽步行或地鐵回旅館",t:"約 15–20 分",o:"Gasoline Grill Landgreven 10 Copenhagen",d:"Copenhagen Central Station",m:"transit"},
-  april:{v:"🚶 步行往羅森堡宮",t:"約 10 分",o:"April Coffee Pilestræde 39 Copenhagen",d:"Rosenborg Castle Copenhagen",m:"walking"},
-  rosenborg:{v:"🚶 步行往 Nørreport 旁市場",t:"約 5 分",o:"Rosenborg Castle Copenhagen",d:"Torvehallerne Copenhagen",m:"walking"},
-  torvehallerne:{v:"🚶 步行回老城",t:"約 6 分",o:"Torvehallerne Copenhagen",d:"Rundetårn Copenhagen",m:"walking"},
-  rundetaarn:{v:"🚶 步行（或 Nørreport 搭 M3 至 København H 再走 3 分）",t:"約 20 分",o:"Rundetårn Copenhagen",d:"Maple Casual Dining Vesterbrogade 24 Copenhagen",m:"transit"},
-  maple:{v:"🚶 飯後散步進樂園看點燈",t:"約 5 分",o:"Maple Casual Dining Vesterbrogade 24 Copenhagen",d:"Tivoli Gardens Copenhagen",m:"walking"},
+  hay:{v:"🚶 步行往 Vesterbrogade（或地鐵 Kongens Nytorv → København H）",t:"約 20 分",o:"HAY House Østergade 61 Copenhagen",d:"Maple Casual Dining Vesterbrogade 24 Copenhagen",m:"transit"},
+  maple:{v:"🚶 飯後散步回旅館，時差日早睡",t:"約 5–10 分",o:"Maple Casual Dining Vesterbrogade 24 Copenhagen",d:"Copenhagen Central Station",m:"walking"},
   kronborg:{v:"🚆 火車 Helsingør → Humlebæk＋步行 10 分",t:"共約 25 分",o:"Kronborg Castle Helsingør",d:"Louisiana Museum of Modern Art Humlebæk",m:"transit"},
   louisiana:{v:"🚆 火車 Humlebæk → København H＋步行 8 分",t:"共約 45 分",o:"Louisiana Museum of Modern Art Humlebæk",d:"Kødbyens Fiskebar Copenhagen",m:"transit"},
-  buka:{v:"🚶 步行往議會宮",t:"約 12 分",o:"BUKA Store Kongensgade 18 Copenhagen",d:"Christiansborg Palace Copenhagen",m:"walking"},
-  christiansborg:{v:"🚇 M3 至 Enghave Plads＋步行",t:"共約 20 分",o:"Christiansborg Palace Copenhagen",d:"Home of Carlsberg Copenhagen",m:"transit"},
-  carlsberg:{v:"🚕 拖行李建議計程車去碼頭（省事）",t:"約 15 分",o:"Home of Carlsberg Copenhagen",d:"DFDS Terminal Copenhagen",m:"driving"},
+  fiskebar:{v:"🚶 飯後散步進 Tivoli 看夜燈",t:"約 12 分",o:"Kødbyens Fiskebar Copenhagen",d:"Tivoli Gardens Copenhagen",m:"walking"},
+  buka:{v:"🚶 步行往 Pilestræde 巷內",t:"約 10 分",o:"BUKA Store Kongensgade 18 Copenhagen",d:"April Coffee Pilestræde 39 Copenhagen",m:"walking"},
+  april:{v:"🚶 出巷口就是圓塔",t:"約 2 分",o:"April Coffee Pilestræde 39 Copenhagen",d:"Rundetårn Copenhagen",m:"walking"},
+  rundetaarn:{v:"🚶 步行往羅森堡宮",t:"約 8 分",o:"Rundetårn Copenhagen",d:"Rosenborg Castle Copenhagen",m:"walking"},
+  rosenborg:{v:"🚶 步行往 Nørreport 旁市場",t:"約 5 分",o:"Rosenborg Castle Copenhagen",d:"Torvehallerne Copenhagen",m:"walking"},
+  gasoline:{v:"🚕 回旅館取行李 → 計程車往 DFDS 碼頭（拖行李別省這段）",t:"約 15 分",o:"Copenhagen Central Station",d:"DFDS Terminal Copenhagen",m:"driving"},
   h_oslo:{v:"🚶 寄完行李步行往歌劇院屋頂",t:"約 10 分",o:"Citybox Oslo",d:"Oslo Opera House",m:"walking"},
   operahouse:{v:"🚶 就在隔壁",t:"約 5 分",o:"Oslo Opera House",d:"MUNCH Museum Oslo",m:"walking"},
   munch:{v:"🚶 沿海濱步行（或電車 12 號）",t:"約 20 分",o:"MUNCH Museum Oslo",d:"Aker Brygge Oslo",m:"walking"},
@@ -413,12 +428,15 @@ const ROUTES = {
   fishmarket:{v:"🚶 沿港邊步行",t:"約 3 分",o:"Fish Market Bergen",d:"Bryggen Bergen",m:"walking"},
   bryggen:{v:"🚶 步行往美術館群",t:"約 12 分",o:"Bryggen Bergen",d:"KODE Bergen",m:"walking"},
   kode:{v:"🚌 公車＋Ulriksbanen 纜車上山",t:"共約 30 分",o:"KODE Bergen",d:"Ulriken Cable Car Bergen",m:"transit"},
+  h_tromso:{v:"🚌 公車 20/24/26 過特羅姆瑟大橋（或步行 25 分）",t:"約 15 分",o:"Thon Hotel Polar Tromso",d:"Arctic Cathedral Tromso",m:"transit"},
+  tr_cathedral:{v:"🚶 教堂後方步行到纜車山下站",t:"約 10 分",o:"Arctic Cathedral Tromso",d:"Fjellheisen Tromso",m:"walking"},
+  tr_husky:{v:"🚐 團體行程含市區接送，中間空檔回市區步行即可",t:""},
   h_sto:{v:"🚇 地鐵 T-Centralen → Gamla Stan 一站（或步行 15 分）",t:"約 5 分",o:"Generator Stockholm",d:"Gamla Stan Stockholm",m:"transit"},
-  gamlastan:{v:"🚶 石板巷散步上坡",t:"約 4 分",o:"Gamla Stan Stockholm",d:"The Royal Palace Stockholm",m:"walking"},
-  palace:{v:"🚶 廣場旁",t:"約 3 分",o:"The Royal Palace Stockholm",d:"Nobel Prize Museum Stockholm",m:"walking"},
   vasa:{v:"🚶 島上步行",t:"約 10 分",o:"Vasa Museum Stockholm",d:"Skansen Stockholm",m:"walking"},
   skansen:{v:"🚶 步行",t:"約 6 分",o:"Skansen Stockholm",d:"ABBA The Museum Stockholm",m:"walking"},
-  sodermalm:{v:"🚶 沿 Södermalm 北緣步行（Monteliusvägen 看完天際線）",t:"約 20 分",o:"Monteliusvägen Stockholm",d:"Fotografiska Stockholm",m:"walking"},
+  palace:{v:"🚶 廣場旁",t:"約 3 分",o:"The Royal Palace Stockholm",d:"Nobel Prize Museum Stockholm",m:"walking"},
+  nobel:{v:"🚇 地鐵 Gamla Stan → Slussen 一站（或步行 15 分）",t:"約 10 分",o:"Nobel Prize Museum Stockholm",d:"Monteliusvagen Stockholm",m:"transit"},
+  sodermalm:{v:"🚶 沿 Södermalm 北緣步行",t:"約 20 分",o:"Monteliusvagen Stockholm",d:"Fotografiska Stockholm",m:"walking"},
   fotografiska:{v:"🚶 步行至 Slussen 站，開始地鐵藝術巡禮",t:"約 10 分",o:"Fotografiska Stockholm",d:"Slussen Stockholm",m:"walking"},
   metroart:{v:"🚇 地鐵至 Östermalmstorg 站",t:"約 10 分",o:"T-Centralen Stockholm",d:"Östermalms Saluhall Stockholm",m:"transit"},
 };
@@ -484,12 +502,12 @@ function counts(){
 }
 
 async function save(){
-  try{ if(window.storage) await window.storage.set("nordic-choices-v2", JSON.stringify(state)); }catch(e){}
+  try{ if(window.storage) await window.storage.set("nordic-choices-v9", JSON.stringify(state)); }catch(e){}
 }
 async function load(){
   try{
     if(window.storage){
-      const r=await window.storage.get("nordic-choices-v2");
+      const r=await window.storage.get("nordic-choices-v9");
       if(r&&r.value){ Object.assign(state, JSON.parse(r.value)); STOPS.forEach(s=>paint(s.id)); }
     }
   }catch(e){}
