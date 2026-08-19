@@ -7,7 +7,7 @@
 
 ## 🔴 現在最急的兩件事
 
-1. **9/13 哥本哈根第二晚還沒訂。** Agoda 那筆（訂單 1763867423）只含 **9/12 一晚**，但渡輪是 9/14 16:30 開，所以 9/13 那晚是空的。先問同一家能不能續住 2 間，不然就得拖四咖行李換旅館。
+1. **9/13 哥本哈根第二晚還沒訂。** Agoda 訂單 1763867423 只含 **9/12 一晚（14:00 入住 – 9/13 11:00 退房）**，但渡輪是 9/14 16:30 才開，所以 9/13 那晚是空的。**直接在 Four Points Flex 延長一晚 2 間**（Agoda「管理訂單」或打給飯店）——沒延長的話 9/13 早上出門去北西蘭一日遊就得帶著四咖行李。
 2. **9/17 晚間 Gudvangen → Voss 巴士。** 遊船 19:20 靠岸，這段是預訂制（norwaysbest.com「Bus between Gudvangen and Voss」，最晚出發前一天），不是到了就有車。同時用 Entur App 確認 9/17 19:20 之後真的有班次。
 
 ---
@@ -38,7 +38,7 @@
 | 峽灣遊船 | 9/17 Flåm **17:30** → Gudvangen **19:20**（4 人） | DCZG41 |
 | 內陸機① | 9/20 卑爾根 BGO **20:15** → 特羅姆瑟 TOS **22:20**（直飛 2h05） | **XGQURP** |
 | 內陸機② | 9/23 SK1491 特羅姆瑟 **17:45** → 斯德哥爾摩 ARN **19:40**（直飛 1h55、第 5 航廈） | **XGYZNK** |
-| 哥本哈根住宿 | 9/12 一晚、2 間 Standard Twin、NT$11,044 | Agoda 1763867423 |
+| 哥本哈根住宿 | **Four Points Flex by Sheraton Copenhagen Arena** 9/12 一晚、2 間 Standard Twin（4 位大人）、NT$11,044 含稅 | Agoda 1763867423 |
 
 **兩張機票要回頭確認**：App 截圖的乘客欄只顯示 1 位（Kun Chieh Hsu）——確認 4 個人都在同一筆訂位內，並線上加購託運行李（機場櫃台補很貴）。
 
@@ -47,7 +47,19 @@
 ## 還要訂的（按急迫度）
 
 ### 1. 🔴 9/13 哥本哈根第二晚（2 間）
-同一家續住最省事。若滿房，附近同級選項：Next House Copenhagen（nexthousecopenhagen.com，有最低價保證）、CityHub Copenhagen（cityhub.com，直訂省 8%）。9/13 是週日，房況通常比週六好。
+
+**在 Four Points Flex 延長一晚**是唯一不痛的做法：Agoda 頁面「管理訂單」看能不能改日期，或直接打給飯店加訂 9/13。9/13 是週日，房況通常比週六好。
+
+若真的滿房，退而求其次是換到市中心（反而更靠近 9/14 的接駁巴士上車點），但 9/13 早上要帶行李移動：Next House Copenhagen（nexthousecopenhagen.com，有最低價保證）、CityHub Copenhagen（cityhub.com，直訂省 8%）。
+
+**飯店資訊（供聯絡與導航用）**
+- 全名：Four Points Flex by Sheraton Copenhagen Arena（Marriott 旗下經濟品牌）
+- 地址：**Ørestads Blvd. 124, 2300 København S**（Royal Arena／Bella Center 旁）
+- 最近車站：**Ørestad**（地鐵 M1＋區域火車），步行約 600 公尺／8 分
+- **機場 → Ørestad：區域火車 2 站、約 8 分鐘**（比進市中心還快，落地先來寄行李最順）
+- **Ørestad → 市中心**：M1 地鐵 11 分直達 Kongens Nytorv（新港）／火車 7 分到中央車站
+- 車站旁就是 **Field's 購物中心**（有超市，買水、零食、缺的東西都在這）
+- City Pass Small（zone 1–4）就包含 Ørestad 與機場段
 
 ### 2. 🔴 9/17 晚間 Gudvangen → Voss 巴士
 - **網址**：norwaysbest.com →「Bus between Gudvangen and Voss」（Vy 營運，站牌在碼頭旁 Stop H）
@@ -78,7 +90,15 @@
 - **9/22 晚不用先訂**：9/21 沒追到再當天下午前加訂；省錢備援是 21 點後上 Fjellheisen 纜車或走到 Telegrafbukta 海灘。
 - **Fjellheisen 纜車｜9/22 傍晚**：book.fjellheisen.no，成人來回 NOK 495，線上票效期 90 天，也可現場買。強風停駛。
 
-### 5. 其他
+### 5. 哥本哈根三天的行李動線（因為旅館不在市中心）
+
+| 日期 | 做法 |
+|---|---|
+| 9/12 落地 | 機場火車 2 站到 Ørestad（8 分）→ 步行 8 分**先寄行李**（check-in 14:00）→ 走回車站搭 M1 進市中心。晚餐 Maple 在中央車站旁，飯後火車 7 分回旅館 |
+| 9/13 一日遊 | **前提是已延長住宿**，否則 11:00 就得退房帶行李。Ørestad 火車 7 分到中央車站 → 轉車去 Helsingør |
+| 9/14 上船日 | 10:30 退房**帶行李**搭火車到中央車站 → 行李寄**車站置物櫃**（DKK 50–80）→ 上午逛老城 → **15:20 取行李 → 15:40 搭已訂的接駁巴士**到碼頭。別回旅館拿行李，來回浪費半小時 |
+
+### 6. 其他
 - **渡輪 Skagerak 自助晚餐**：上 My Booking 加訂，**開航前 32 小時截止**（€40/人含一杯飲料；早餐 €21/人）
 - **餐廳訂位**：Maple 9/12（六）17:30 場、Kødbyens Fiskebar 9/13（日）晚
 - **Arlanda Express**：arlandaexpress.com，**4 人放同一筆訂單**——首位 SEK 340、第 2 位起每人 SEK 120，共約 **SEK 700**（分開買 SEK 1,360）。效期 90 天不綁班次，現在就能買；上車補票加收 SEK 200
@@ -119,9 +139,11 @@
 ---
 
 ## ⚠️ 出發前必查
+0. **Four Points Flex 的 9/13 是否已延長**（這是目前最大的破口）
 1. 兩張機票是否都掛滿 4 位乘客、託運行李是否已加購
 2. 9/17 Gudvangen→Voss 晚間巴士（Entur App 實查）
 3. 卑爾根 9/20 傍晚 Bybanen 班次（Skyss Reise App，週日傍晚班次密）
 4. 特羅姆瑟 Flybussen 9/20 深夜末班（flybussen.no；不確定就直接搭計程車）
 5. Kvaløya Husky 的溫度取消門檻（email 業者）
 6. 羅森堡宮 9/14（週一）是否休館（官網）
+7. 哥本哈根中央車站置物櫃的尺寸與價格（四咖行李箱要幾格）
