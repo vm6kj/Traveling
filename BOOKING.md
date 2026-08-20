@@ -1,15 +1,18 @@
-# 北歐三國 訂票操作手冊（v12・住宿定案＋Tivoli 加強）
+# 北歐三國 訂票操作手冊（v13・前四晚住宿已訂）
 
 **行程**：2026/9/11–9/26・**4 人（2 間房）**｜**更新**：2026/8/17
 **匯率**：NOK 1 ≈ NT$3.0–3.3・DKK 1 ≈ NT$4.7・SEK 1 ≈ NT$3.3・EUR 1 ≈ NT$35
 
 ---
 
-## 🔴 現在最急的一件事
+## 🔴 現在最急的一件事：9/17 晚間 Gudvangen → Voss 巴士
 
-**9/17 晚間 Gudvangen → Voss 巴士。** 遊船 19:20 靠岸，這段是預訂制（norwaysbest.com「Bus between Gudvangen and Voss」，最晚出發前一天），不是到了就有車。同時用 Entur App 確認 9/17 19:20 之後真的有班次。
+**查證結論（2026/8/17，多來源交叉）——這段不能賭現場：**
+1. **Skyss 950（公營公車）**：不能預訂、上車刷 Visa/MC 或 Skyss/Entur App 買票即可——但**傍晚就收班，19:20 下船後大概率已無 950**。「現場買得到票」對它成立，「有車可搭」不成立。
+2. **Norway's Best 加開巴士（Vy 營運，接自家船班）**：官方頁面明載晚間班次「**最晚出發前一天完成預訂才會開行**」——有人訂車才會來，沒訂的話現場等不到車。
 
-（9/13 哥本哈根已決定住 **Steel House Copenhagen**，確認訂單完成即可。）
+**怎麼訂（推薦）**：norwaysbest.com →「Bus between Gudvangen and Voss」→ 選 9/17 配合 19:20 到港的班次、4 人——**跟遊船同一網站同一帳號**，班次就是設計來接自家船的，出狀況客服同一家（reservation@norwaysbest.com，一個工作天內回）。不要走 Omio／Busbud 等第三方。訂完用 **Entur App** 查 9/17 當晚 Gudvangen kai 的班次雙重確認。
+**最後保險**：Voss Taxi +47 56 51 13 40，約 NOK 1,500–2,000／車（四人分攤每人約 NT$1,200）。
 
 ---
 
@@ -39,7 +42,9 @@
 | 峽灣遊船 | 9/17 Flåm **17:30** → Gudvangen **19:20**（4 人） | DCZG41 |
 | 內陸機① | 9/20 卑爾根 BGO **20:15** → 特羅姆瑟 TOS **22:20**（直飛 2h05） | **XGQURP** |
 | 內陸機② | 9/23 SK1491 特羅姆瑟 **17:45** → 斯德哥爾摩 ARN **19:40**（直飛 1h55、第 5 航廈） | **XGYZNK** |
-| 哥本哈根住宿 | **Four Points Flex by Sheraton Copenhagen Arena** 9/12 一晚、2 間 Standard Twin（4 位大人）、NT$11,044 含稅 | Agoda 1763867423 |
+| 哥本哈根住宿① | **Four Points Flex by Sheraton CPH Arena** 9/12、2 間 Standard Twin、NT$11,044（不可退） | Agoda 1763867423 |
+| 哥本哈根住宿② | **Steel House Copenhagen** 9/13、四人房含專用衛浴（4 上下舖、12 m²）、NT$5,524（不可退） | Agoda 1763907103 |
+| 奧斯陸住宿 | **Airbnb「Sentrum 的房源」**（房東 Maria，Aker Brygge 一帶）9/15–17、4 人、NT$16,868——**待房東 24h 內確認**；[房源頁](https://www.airbnb.com.tw/rooms/1159532195125844490) | HMXR4BZXD9 |
 
 **兩張機票要回頭確認**：App 截圖的乘客欄只顯示 1 位（Kun Chieh Hsu）——確認 4 個人都在同一筆訂位內，並線上加購託運行李（機場櫃台補很貴）。
 
@@ -47,42 +52,39 @@
 
 ## 還要訂的（按急迫度）
 
-### 1. 哥本哈根兩間旅館（位置差很多，行李動線照著走）
+### 1. ✅ 前四晚住宿全訂好了（資訊卡）
 
-**9/12｜Four Points Flex by Sheraton Copenhagen Arena**（✅ 已訂・Agoda 1763867423）
-- 地址：**Ørestads Blvd. 124, 2300 København S**（Royal Arena／Bella Center 旁）
-- 最近車站 **Ørestad**（M1 地鐵＋區域火車），步行約 600 公尺／8 分
-- **機場 → Ørestad：區域火車 2 站、約 8 分鐘**（比進市中心還快，落地先來寄行李最順）
-- **Ørestad → 市中心**：M1 地鐵 11 分直達 Kongens Nytorv（新港）／火車 7 分到中央車站
-- 車站旁就是 **Field's 購物中心**（超市，買水零食）
+**9/12｜Four Points Flex by Sheraton Copenhagen Arena**（Agoda 1763867423・NT$11,044・不可退）
+- 2 間 Standard Twin，14:00 入住／11:00 退房，主住客 LuYi-Chun
+- **Ørestads Blvd. 124, 2300 København S**｜Ørestad 站步行 8 分
+- 機場→Ørestad 火車 2 站 8 分；M1 地鐵 11 分直達 Kongens Nytorv；車站旁 Field's 有超市
 
-**9/13｜Steel House Copenhagen**（已決定，確認訂單）
-- 訂 **2 間私人房**（不是宿舍床位）；官網 **arp-hansen.com** 直訂有最低價保證，約 DKK 1,200–1,800／2 間／晚
-- 地址：**Herholdtsgade 6, 1605 København V**
-- 步行距離：**Nørreport 站 6 分**（去 Helsingør 的火車、Torvehallerne、羅森堡都在這頭）、**Tivoli 10 分**、**中央車站 12 分**
-- 這個位置正好接住 9/14 的兩件事：上午的老城步行圈，和 15:40 從中央車站發車的渡輪接駁巴士
-- Arp-Hansen 集團的設計旅舍（Next House 姊妹館），有室內泳池與健身房
-- City Pass Small（zone 1–4）包含 Ørestad 與機場段，兩間旅館都在範圍內
+**9/13｜Steel House Copenhagen**（Agoda 1763907103・NT$5,524・不可退）
+- **1 間四人房：含專用衛浴、4 張上下舖、12 m²**——大行李在房裡開不了幾咖，過夜用品先抽出來
+- **Herholdtsgade 6, 1605 København V**｜電話 +45 2063 0011
+- Nørreport 站 6 分（9/13 去 Helsingør 從這搭）、Tivoli 10 分、中央車站 12 分；有室內泳池
+- City Pass Small（zone 1–4）涵蓋兩間旅館與機場段
 
-### 2. 🔴 9/17 晚間 Gudvangen → Voss 巴士
-- **網址**：norwaysbest.com →「Bus between Gudvangen and Voss」（Vy 營運，站牌在碼頭旁 Stop H）
-- **關鍵**：晚間班次**採預訂制、最晚出發前一天**；選配合 19:20 到港的班次，4 人
-- **雙重確認**：Entur App 查 9/17 從「Gudvangen kai」19:20 之後往 Voss／Bergen 的班次
-- **問不到就寄信**：reservation@norwaysbest.com，問「搭 17:30 船的乘客如何接駁到 Voss」（一個工作天內回）
-- **最後保險**：Voss Taxi +47 56 51 13 40，Gudvangen→Voss 約 NOK 1,500–2,000（四人分攤每人約 NT$1,200）
+**9/15–9/17｜奧斯陸 Airbnb「Sentrum 的房源」**（確認碼 HMXR4BZXD9・NT$16,868・待房東確認）
+- 房東 Maria，4 人整套，[房源頁](https://www.airbnb.com.tw/rooms/1159532195125844490)
+- **16:00 入住／12:00 退房**；位置 Aker Brygge／Filipstad 一帶，確切地址房東確認後 24 小時內提供
+- 取消政策：9/8 16:00 前取消可拿回部分退款
+- **兩件要跟房東處理的事**：①等 24 小時內的確認通知（沒確認訂單不成立，要盯）；②訊息問 9/15 上午能否先放行李（渡輪 10:00 到）——不行就寄 Oslo S 置物櫃
+- **9/17 早上**：Aker Brygge 走到 Oslo S 約 20–25 分，08:25 前出門趕 09:18 的火車
+
+### 2. 🔴 9/17 晚間巴士（詳見最上方「最急的一件事」）
+- 訂 norwaysbest.com「Bus between Gudvangen and Voss」，站牌在碼頭旁 Stop H
 - Voss→Bergen 晚間火車約每小時一班（末班過 23:00），當天 Vy App 買，約 22:00–22:30 進卑爾根
 
-### 3. 五間旅館（全部 2 間房）
+### 3. 剩三間旅館（全部 2 間房）
 
 | 旅館 | 日期 | 晚數 | 直訂網址 | 4 人 2 間總價估 | 備註 |
 |---|---|---|---|---|---|
-| **Steel House 哥本哈根** | 9/13–9/14 | 1 | arp-hansen.com | DKK 1,200–1,800 | 已決定，確認訂單；訂 2 間**私人房**非宿舍 |
-| Citybox Oslo | 9/15–9/17 | 2 | cityboxhotels.com | NOK 5,200–6,800 | Citybox Friend 免費會員有折扣 |
 | **Zander K 卑爾根** | 9/17–**9/20** | **3** | debergenske.no | NOK 9,000–12,000 | 比舊版多一晚；備註 **9/17 約 22:30 才 check-in** |
 | **Thon Hotel Polar 特羅姆瑟** | **9/20**–9/23 | 3 | thonhotels.com | NOK 9,000–11,400 | **務必備註 late arrival 23:00**；Thon+ 免費會員最高 92 折 |
 | **Generator 斯德哥爾摩** | **9/23**–9/25 | **2** | staygenerator.com | SEK 5,200–7,200 | 比舊版少一晚；訂「私人雙人房」非宿舍；直訂比比價網便宜約 15%＋#GenFamily 再 9 折 |
 
-先註冊三個免費會員再訂：**Thon+、Citybox Friend、#GenFamily**。全部先訂「可免費取消」方案鎖房。
+先註冊兩個免費會員再訂：**Thon+、#GenFamily**。全部先訂「可免費取消」方案鎖房。
 
 ### 4. 特羅姆瑟活動（極光只有 9/21、9/22 兩晚機會）
 
@@ -146,7 +148,7 @@
 
 | 類別 | 估算 |
 |---|---|
-| 住宿 12 晚 × 2 間（含已訂的 9/12） | NT$105,000–135,000（每人 NT$26,000–34,000） |
+| 住宿：前 4 晚已訂 NT$33,436＋剩 8 晚估 NT$72,000–92,000 | 全程約 NT$105,000–125,000（每人 NT$26,000–31,000） |
 | Tivoli（兩場入場券＋一天設施手環，4 人） | 約 NT$11,000–13,000 |
 | 挪威縮影全段（已訂＋巴士火車） | 約 NT$25,000–28,000 |
 | 兩段內陸機 | 已訂 |
@@ -156,7 +158,7 @@
 ---
 
 ## ⚠️ 出發前必查
-0. Steel House 9/13 訂單是否完成（2 間私人房）
+0. Airbnb 房東 Maria 是否已確認（24 小時內）＋拿到確切地址回填手冊＋問 9/15 行李寄放
 1. 兩張機票是否都掛滿 4 位乘客、託運行李是否已加購
 2. 9/17 Gudvangen→Voss 晚間巴士（Entur App 實查）
 3. 卑爾根 9/20 傍晚 Bybanen 班次（Skyss Reise App，週日傍晚班次密）
