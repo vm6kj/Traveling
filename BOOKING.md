@@ -11,7 +11,13 @@
 1. **Skyss 950（公營公車）**：不能預訂、上車刷 Visa/MC 或 Skyss/Entur App 買票即可——但**傍晚就收班，19:20 下船後大概率已無 950**。「現場買得到票」對它成立，「有車可搭」不成立。
 2. **Norway's Best 加開巴士（Vy 營運，接自家船班）**：官方頁面明載晚間班次「**最晚出發前一天完成預訂才會開行**」——有人訂車才會來，沒訂的話現場等不到車。
 
-**怎麼訂（推薦）**：norwaysbest.com →「Bus between Gudvangen and Voss」→ 選 9/17 配合 19:20 到港的班次、4 人——**跟遊船同一網站同一帳號**，班次就是設計來接自家船的，出狀況客服同一家（reservation@norwaysbest.com，一個工作天內回）。不要走 Omio／Busbud 等第三方。訂完用 **Entur App** 查 9/17 當晚 Gudvangen kai 的班次雙重確認。
+**補充查證（8/20）**：Google Maps／Entur 顯示晚間確實還有車——那些是 **VY450 長途巴士**（Bergen–Voss–Gudvangen–Flåm–Sogndal 幹線）。理論上可上車刷卡，但 Vy 官方明載兩件事：①**部分路線的中途站要有人持預購票（發車 15 分前買）巴士才會停靠**，而 Gudvangen 的 VY450 站在 E16 路邊、離碼頭走 7 分鐘，正是這種站；②**預購票才保證座位**，車上買只看剩位——4 人同船下來搶同一班，別賭。
+
+**兩個訂法擇一（都便宜，重點是鎖住「會停＋有位」）**：
+- **A・Norway's Best 接駁**：norwaysbest.com →「Bus between Gudvangen and Voss」→ 9/17 配合 19:20 到港的班次、4 人。碼頭旁 Stop H 上車、配自家船班、**船誤點車會等**。客服同遊船（reservation@norwaysbest.com）
+- **B・VY450 訂位**：vybuss.no 或 Vy App 訂 19:45 之後的班次（留船誤點緩衝）、4 個座位。上車點「Gudvangen E16」在公路邊、走 7 分鐘
+
+不要走 Omio／Busbud 等第三方。出發前一天再用 **Entur App** 查 9/17 當晚實際班次做最後確認。
 **最後保險**：Voss Taxi +47 56 51 13 40——住宿已改在 Voss，Gudvangen 過去只要 20 分鐘、約 NOK 500–700／車，最壞情況的代價比以前小得多。
 
 ---
