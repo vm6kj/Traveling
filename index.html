@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>北歐三國旅遊手冊 v15｜2026.9.11–9.26</title>
+<title>北歐三國旅遊手冊 v16｜2026.9.11–9.26</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -57,6 +57,29 @@ body{background:var(--snow);color:var(--fjord);font-family:var(--sans);font-size
 .day-head::after{content:"";flex:1;height:1px;background:var(--line)}
 .transit{font-size:13px;color:var(--fjord-soft);background:transparent;border:1px dashed var(--line);border-radius:8px;padding:8px 12px;margin-bottom:10px}
 .transit b{color:var(--fjord);font-weight:700}
+
+/* ---------- day navigation ---------- */
+.daynav{position:sticky;top:0;z-index:60;background:rgba(236,239,241,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.daynav-in{max-width:720px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;padding:8px 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.daynav-in::-webkit-scrollbar{display:none}
+.dchip{flex:0 0 auto;border:1px solid var(--line);border-bottom-width:3px;background:var(--card);border-radius:10px;padding:3px 10px 4px;font-size:12px;line-height:1.25;color:var(--fjord);cursor:pointer;text-align:center;font-family:var(--sans)}
+.dchip b{font-family:var(--serif);font-size:15px;display:block}
+.dchip small{display:block;font-size:10px;color:var(--fjord-soft);letter-spacing:.02em}
+.dchip.on{background:var(--fjord);border-color:var(--fjord);color:#fff}
+.dchip.on small{color:#C9D6DC}
+.day,#checklist{scroll-margin-top:66px}
+
+/* ---------- map preview ---------- */
+.mapbtn{border:1px solid var(--stay);background:var(--card);color:var(--stay);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:var(--sans)}
+.mapbtn.on{background:var(--stay);color:#fff}
+.conn .acts{margin-left:auto;display:flex;gap:10px;align-items:center;white-space:nowrap}
+.conn .acts a{margin-left:0}
+.cardmap{display:flex;gap:12px;align-items:center;margin-top:8px}
+.cardmap .bloga{margin-top:0}
+.mapbox{display:none;margin:-4px 2px 12px 8px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.stop .mapbox{margin:8px 0 2px}
+.mapbox.open{display:block}
+.mapbox iframe{width:100%;height:260px;border:0;display:block}
 
 /* ---------- point-to-point connectors ---------- */
 .conn{display:flex;align-items:center;gap:8px;margin:-2px 2px 12px 8px;font-size:12.5px;color:var(--fjord-soft)}
@@ -132,7 +155,7 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
   <div class="wrap">
     <div class="eyebrow">SCANDINAVIA + ARCTIC · SEPTEMBER 2026</div>
     <h1>北歐三國旅遊手冊</h1>
-    <div class="dates">2026.9.11（五）— 9.26（六）・14 天・4 人・v15 標記微調版</div>
+    <div class="dates">2026.9.11（五）— 9.26（六）・14 天・4 人・v16 介面升級版</div>
     <div class="route"><span>哥本哈根 2 晚</span><span>渡輪 1 晚</span><span>奧斯陸 2 晚</span><span>Voss 1 晚</span><span>卑爾根 2 晚</span><span>特羅姆瑟 3 晚</span><span>斯德哥爾摩 2 晚</span></div>
     <div class="flights">
       <div><b>去程 9/11</b>　TG635 台北 18:50 → 曼谷 21:35｜TG950 曼谷 01:10 → 哥本哈根 07:40（+1）</div>
@@ -143,9 +166,11 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
   </div>
 </div>
 
+<nav class="daynav" aria-label="快速跳到某一天"><div class="daynav-in" id="daynav"></div></nav>
+
 <div class="wrap">
 
-  <div class="howto"><b>使用方式</b>：每張卡片按「想去」或「跳過」標記（住宿卡也可以標）。卡片下方有中文遊記連結、卡片之間有點對點交通與 Google 導航。全部看完後按右下角「產生微調清單」，複製結果貼回給 Claude。</div>
+  <div class="howto"><b>使用方式</b>：上方日期列<b>點一下直接跳到那天</b>（捲動時會自動亮起所在的天）。每張卡片按「想去」或「跳過」標記；交通列與住宿卡的「<b>📍 預覽</b>」會就地展開 Google 地圖看位置，確定要走再點「導航 ›」開路線。看完按右下角「產生微調清單」貼回給 Claude。</div>
 
   <!-- ==================== DENMARK ==================== -->
   <section class="chapter">
@@ -272,7 +297,7 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
   </section>
 
   <!-- ==================== CHECKLIST ==================== -->
-  <section class="chapter">
+  <section class="chapter" id="checklist">
     <div class="ch-head"><span class="no">05</span><h2>行前清單</h2><span class="span">按急迫順序</span></div>
     <div class="check">
       <h3>還要訂的（由急到緩）</h3>
@@ -318,7 +343,7 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
     </div>
   </section>
 
-  <footer>KC 的北歐手冊 v15（依標記微調・4 人版）・由 Claude 整理・標記完記得匯出貼回對話</footer>
+  <footer>KC 的北歐手冊 v16（介面升級・4 人版）・由 Claude 整理・標記完記得匯出貼回對話</footer>
 </div>
 
 <!-- sticky bar -->
@@ -495,7 +520,7 @@ function render(){
           <span class="tag ${s.stay?'stay':'kind'}">${s.kind}</span>
         </div>
         <div class="desc">${s.desc}</div>
-        ${s.blog?`<a class="bloga" href="${s.blog}" target="_blank" rel="noopener">${s.bl}</a>`:""}
+        ${s.blog?(/google\.com\/maps/.test(s.blog)?`<div class="cardmap"><button class="mapbtn" data-q="${(decodeURIComponent((s.blog.match(/query=([^&]+)/)||[])[1]||s.name)).replace(/"/g,"")}">📍 預覽位置</button><a class="bloga" href="${s.blog}" target="_blank" rel="noopener">在 Google Maps 開啟 ›</a></div><div class="mapbox"></div>`:`<a class="bloga" href="${s.blog}" target="_blank" rel="noopener">${s.bl}</a>`):""}
         <div class="btns">
           <button class="btn" data-id="${s.id}" data-v="yes" aria-pressed="false">想去</button>
           <button class="btn" data-id="${s.id}" data-v="no" aria-pressed="false">跳過</button>
@@ -504,8 +529,9 @@ function render(){
       host.appendChild(card);
       const r=ROUTES[s.id];
       if(r){
-        const link = r.o ? `<a href="${gm(r.o,r.d,r.m)}" target="_blank" rel="noopener">Google 導航 ›</a>` : "";
-        host.appendChild(el(`<div class="conn"><span class="arrow">↓</span><span>${r.v}${r.t?"・"+r.t:""}</span>${link}</div>`));
+        const acts = r.o ? `<span class="acts"><button class="mapbtn" data-q="${r.d.replace(/"/g,"")}">📍 預覽</button><a href="${gm(r.o,r.d,r.m)}" target="_blank" rel="noopener">導航 ›</a></span>` : "";
+        host.appendChild(el(`<div class="conn"><span class="arrow">↓</span><span>${r.v}${r.t?"・"+r.t:""}</span>${acts}</div>`));
+        if(r.o) host.appendChild(el(`<div class="mapbox"></div>`));
       }
     });
   });
@@ -578,7 +604,75 @@ document.getElementById("copyBtn").addEventListener("click",async()=>{
   document.getElementById("copied").style.visibility="visible";
 });
 
-render(); load();
+// ---------- day navigation ----------
+const DAYS=[
+  {t:"day-d1", n:"12",w:"六",c:"哥本",col:"#A0523D"},
+  {t:"day-d2", n:"13",w:"日",c:"哥本",col:"#A0523D"},
+  {t:"day-d3", n:"14",w:"一",c:"上船",col:"#A0523D"},
+  {t:"day-d4", n:"15",w:"二",c:"奧斯陸",col:"#C08A2E"},
+  {t:"day-d5", n:"16",w:"三",c:"奧斯陸",col:"#C08A2E"},
+  {t:"day-d6", n:"17",w:"四",c:"縮影",col:"#557A64"},
+  {t:"day-d7", n:"18",w:"五",c:"Voss→卑",col:"#1F5673"},
+  {t:"day-d8", n:"19",w:"六",c:"卑爾根",col:"#1F5673"},
+  {t:"day-d9", n:"20",w:"日",c:"卑→飛",col:"#1F5673"},
+  {t:"day-d10",n:"21",w:"一",c:"特羅姆瑟",col:"#3D5A6C"},
+  {t:"day-d11",n:"22",w:"二",c:"特羅姆瑟",col:"#3D5A6C"},
+  {t:"day-d12",n:"23",w:"三",c:"特→斯",col:"#3D5A6C"},
+  {t:"day-d14",n:"24",w:"四",c:"斯德",col:"#6B4F8A"},
+  {t:"day-d15",n:"25",w:"五",c:"回程",col:"#6B4F8A"},
+  {t:"checklist",n:"✓",w:"",c:"清單",col:"#16303F"},
+];
+function buildNav(){
+  document.querySelectorAll('[id^="stops-"]').forEach(h=>{const dd=h.closest(".day"); if(dd&&!dd.id) dd.id="day-"+h.id.slice(6);});
+  const nav=document.getElementById("daynav");
+  DAYS.forEach(x=>{
+    if(!document.getElementById(x.t)) return;
+    nav.appendChild(el(`<button class="dchip" data-t="${x.t}" style="border-bottom-color:${x.col}"><b>${x.n}</b><small>${x.w?x.w+"・":""}${x.c}</small></button>`));
+  });
+  nav.addEventListener("click",e=>{
+    const c=e.target.closest(".dchip"); if(!c) return;
+    const tgt=document.getElementById(c.dataset.t);
+    if(tgt) tgt.scrollIntoView({behavior:"smooth",block:"start"});
+  });
+}
+let spyTick=false;
+function spy(){
+  if(spyTick) return; spyTick=true;
+  requestAnimationFrame(()=>{
+    spyTick=false;
+    let cur=null;
+    DAYS.forEach(x=>{
+      const t=document.getElementById(x.t);
+      if(t && t.getBoundingClientRect().top<=90) cur=x.t;
+    });
+    document.querySelectorAll(".dchip").forEach(c=>{
+      const on=c.dataset.t===cur;
+      c.classList.toggle("on",on);
+      if(on) c.scrollIntoView({inline:"center",block:"nearest",behavior:"smooth"});
+    });
+  });
+}
+window.addEventListener("scroll",spy,{passive:true});
+
+// ---------- map preview toggle ----------
+const emb=q=>`https://maps.google.com/maps?q=${encodeURIComponent(q)}&z=15&hl=zh-TW&output=embed`;
+document.addEventListener("click",e=>{
+  const mb=e.target.closest(".mapbtn"); if(!mb) return;
+  const wrap=mb.closest(".conn,.cardmap"); if(!wrap) return;
+  const box=wrap.nextElementSibling && wrap.nextElementSibling.classList.contains("mapbox") ? wrap.nextElementSibling : null;
+  if(!box) return;
+  const wasOpen=box.classList.contains("open");
+  document.querySelectorAll(".mapbox.open").forEach(b=>b.classList.remove("open"));
+  document.querySelectorAll(".mapbtn.on").forEach(b=>{b.classList.remove("on"); b.textContent=b.dataset.lbl;});
+  if(!wasOpen){
+    if(!box.firstChild) box.appendChild(el(`<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="${emb(mb.dataset.q)}" title="地圖預覽"></iframe>`));
+    box.classList.add("open");
+    if(!mb.dataset.lbl) mb.dataset.lbl=mb.textContent;
+    mb.classList.add("on"); mb.textContent="✕ 收合地圖";
+  }
+});
+
+render(); buildNav(); spy(); load();
 </script>
 </body>
 </html>
