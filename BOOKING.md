@@ -137,6 +137,7 @@ Voss 過夜讓縮影日 20:30 收工（原案要 22:30 才進卑爾根），且 
 - **卑爾根→機場（9/20 傍晚）**：Skyss Billett App 買 Zone A 單程 NOK 51/人；17:45 回旅館拿行李、18:15 Nonneseter 站上 Bybanen 1 號線、19:15 抵機場。備案 Bergen Taxi +47 07000
 - **特羅姆瑟機場→市區（9/20 22:20 落地）**：Flybussen 營運到約 00:30（NOK 125/人）；四人加行李直接叫計程車 NOK 250–350 一車更省事
 - **特羅姆瑟市區→機場（9/23）**：市區公車 40/42 號 NOK 50/人（Svipper App），15:45 出發、16:15 抵機場
+- **Oslo Pass 24h**（visitoslo.com／官方 App，約 NOK 580–595/人）：9/15 進 MUNCH 前才啟用 → 24h 內涵蓋 9/16 Bygdøy（Fram＋Kon-Tiki）與市區交通，比單買省一點；App 版可控制啟用時間
 - **Tivoli 門票**見第 6 節（9/14 主場先線上買、9/12 加碼場現場再決定）；Vasa 門票出發前一週買；交通 App：CPH City Pass・Ruter・Skyss・Svipper・SL
 
 ---
