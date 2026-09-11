@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>北歐三國旅遊手冊 v21｜2026.9.11–9.26</title>
+<title>北歐三國旅遊手冊 v22｜2026.9.11–9.26</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -56,6 +56,25 @@ body{background:var(--snow);color:var(--fjord);font-family:var(--sans);font-size
 .day-head .w{font-size:12.5px;color:var(--fjord-soft)}
 .day-head::after{content:"";flex:1;height:1px;background:var(--line)}
 .transit{font-size:13px;color:var(--fjord-soft);background:transparent;border:1px dashed var(--line);border-radius:8px;padding:8px 12px;margin-bottom:10px}
+.wx{display:flex;flex-wrap:wrap;gap:8px;margin:-2px 0 10px}
+.wxchip{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:12.5px;color:var(--fjord);min-height:32px}
+.wxchip .ico{font-size:20px;line-height:1}
+.wxchip .city{font-weight:700}
+.wxchip .tmp{font-weight:700;font-variant-numeric:tabular-nums}
+.wxchip .sub{color:var(--fjord-soft)}
+.wxchip .wxbtn{margin-left:auto;border:1px solid var(--stay);background:var(--card);color:var(--stay);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit}
+.wxchip .wxbtn.on{background:var(--stay);color:#fff}
+.wxchip.err{color:var(--fjord-soft);font-style:italic}
+.wxpanel{display:none;flex-basis:100%;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12.5px}
+.wxpanel.open{display:block}
+.wxpanel .hrs{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px;margin:8px 0}
+.wxpanel .hr{text-align:center;background:var(--snow);border-radius:8px;padding:6px 2px;line-height:1.35}
+.wxpanel .hr b{display:block;font-size:12px}
+.wxpanel .hr .i{font-size:18px;display:block;margin:2px 0}
+.wxpanel .hr small{display:block;color:var(--fjord-soft);font-size:11px}
+.wxpanel .meta{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--fjord-soft)}
+.wxpanel .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-top:8px;color:var(--fjord-soft);font-size:11.5px}
+.wxpanel .foot a{color:var(--stay);font-weight:700;text-decoration:none}
 .transit b{color:var(--fjord);font-weight:700}
 
 /* ---------- day navigation ---------- */
@@ -155,7 +174,7 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
   <div class="wrap">
     <div class="eyebrow">SCANDINAVIA + ARCTIC · SEPTEMBER 2026</div>
     <h1>北歐三國旅遊手冊</h1>
-    <div class="dates">2026.9.11（五）— 9.26（六）・14 天・4 人・v21 出發版</div>
+    <div class="dates">2026.9.11（五）— 9.26（六）・14 天・4 人・v22 出發版・即時天氣</div>
     <div class="route"><span>哥本哈根 2 晚</span><span>渡輪 1 晚</span><span>奧斯陸 2 晚</span><span>Voss 1 晚</span><span>卑爾根 2 晚</span><span>特羅姆瑟 3 晚</span><span>斯德哥爾摩 2 晚</span></div>
     <div class="flights">
       <div><b>去程 9/11</b>　TG635 台北 18:50 → 曼谷 21:35｜TG950 曼谷 01:10 → 哥本哈根 07:40（+1）</div>
@@ -346,7 +365,7 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
     </div>
   </section>
 
-  <footer>KC 的北歐手冊 v21（出發版・4 人）・由 Claude 整理・標記完記得匯出貼回對話</footer>
+  <footer>KC 的北歐手冊 v22（出發版・即時天氣・4 人）・由 Claude 整理・標記完記得匯出貼回對話</footer>
 </div>
 
 <!-- sticky bar -->
@@ -692,7 +711,64 @@ document.addEventListener("click",e=>{
   }
 });
 
-render(); buildNav(); spy(); load();
+// ---------- live weather (Open-Meteo, no key; re-fetched on every page load) ----------
+const WX_LOC={
+  cph:{n:"哥本哈根",lat:55.676,lon:12.568,q:"Copenhagen"},
+  osl:{n:"奧斯陸",lat:59.913,lon:10.752,q:"Oslo"},
+  flam:{n:"Flåm 峽灣",lat:60.863,lon:7.113,q:"Flåm"},
+  voss:{n:"Voss",lat:60.628,lon:6.415,q:"Voss"},
+  bgo:{n:"卑爾根",lat:60.393,lon:5.324,q:"Bergen"},
+  tos:{n:"特羅姆瑟",lat:69.649,lon:18.956,q:"Tromsø"},
+  sto:{n:"斯德哥爾摩",lat:59.329,lon:18.069,q:"Stockholm"},
+};
+const WX_DAYS=[
+  ["d1","2026-09-12",["cph"]],["d2","2026-09-13",["cph"]],["d3","2026-09-14",["cph"]],
+  ["d4","2026-09-15",["osl"]],["d5","2026-09-16",["osl"]],
+  ["d6","2026-09-17",["flam","voss"]],["d7","2026-09-18",["voss","bgo"]],
+  ["d8","2026-09-19",["bgo"]],["d9","2026-09-20",["bgo","tos"]],
+  ["d10","2026-09-21",["tos"]],["d11","2026-09-22",["tos"]],["d12","2026-09-23",["tos","sto"]],
+  ["d14","2026-09-24",["sto"]],["d15","2026-09-25",["sto"]],
+];
+const WMO=[[0,"☀️","晴"],[1,"🌤️","大致晴"],[2,"⛅","多雲時晴"],[3,"☁️","陰"],[45,"🌫️","霧"],[48,"🌫️","霧（結霜）"],
+  [51,"🌦️","毛毛雨"],[53,"🌦️","毛毛雨"],[55,"🌧️","綿綿細雨"],[56,"🌧️","凍雨"],[57,"🌧️","凍雨"],
+  [61,"🌦️","小雨"],[63,"🌧️","中雨"],[65,"🌧️","大雨"],[66,"🌧️","凍雨"],[67,"🌧️","凍雨"],
+  [71,"🌨️","小雪"],[73,"🌨️","中雪"],[75,"❄️","大雪"],[77,"❄️","雪粒"],
+  [80,"🌦️","陣雨"],[81,"🌧️","陣雨"],[82,"⛈️","強陣雨"],[85,"🌨️","陣雪"],[86,"🌨️","強陣雪"],
+  [95,"⛈️","雷雨"],[96,"⛈️","雷雨冰雹"],[99,"⛈️","雷雨冰雹"]];
+const wmo=c=>{const m=WMO.find(x=>x[0]===c); return m?{i:m[1],t:m[2]}:{i:"🌡️",t:"—"};};
+const yr=q=>`https://www.yr.no/en/search?q=${encodeURIComponent(q)}`;
+const wxUrl=l=>`https://api.open-meteo.com/v1/forecast?latitude=${l.lat}&longitude=${l.lon}`+
+  `&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max,sunrise,sunset`+
+  `&hourly=temperature_2m,weather_code,precipitation_probability,wind_speed_10m&wind_speed_unit=ms&timezone=auto&past_days=2&forecast_days=16`;
+function wxChip(id,date,key,data){
+  const L=WX_LOC[key];
+  if(!data) return el(`<div class="wxchip err">🌐 ${L.n} 天氣載入失敗（離線？）<button class="wxbtn" onclick="loadWeather()">重試</button></div>`);
+  const di=data.daily.time.indexOf(date);
+  if(di<0) return el(`<div class="wxchip err">${L.n}：${date.slice(5).replace("-","/")} 尚無預報（僅供 16 天內）<a class="wxbtn" href="${yr(L.q)}" target="_blank" rel="noopener">yr.no ›</a></div>`);
+  const d=data.daily, w=wmo(d.weather_code[di]);
+  const hi=Math.round(d.temperature_2m_max[di]), lo=Math.round(d.temperature_2m_min[di]);
+  const pp=d.precipitation_probability_max[di], ps=d.precipitation_sum[di], wind=Math.round(d.wind_speed_10m_max[di]);
+  const chip=el(`<div class="wxchip" data-loc="${key}"><span class="ico" title="${w.t}">${w.i}</span><span class="city">${L.n}</span><span class="tmp">${lo}°／${hi}°</span><span class="sub">${w.t}・☔ ${pp==null?"—":pp+"%"}${ps>0.05?` ${ps.toFixed(1)}mm`:""}・💨 ${wind} m/s</span><button class="wxbtn" type="button">詳細 ›</button></div>`);
+  const hrs=[]; const H=data.hourly;
+  for(let i=0;i<H.time.length;i++){ if(H.time[i].startsWith(date)){ const hh=+H.time[i].slice(11,13); if(hh>=6&&hh%3===0) hrs.push(i); } }
+  const fmt=t=>t?t.slice(11,16):"—";
+  const panel=el(`<div class="wxpanel"><div class="meta"><span>🌅 日出 ${fmt(d.sunrise[di])}</span><span>🌇 日落 ${fmt(d.sunset[di])}</span><span>最高 ${hi}°／最低 ${lo}°</span><span>降雨機率 ${pp==null?"—":pp+"%"}・雨量 ${ps==null?"—":ps.toFixed(1)+"mm"}</span><span>最大風 ${wind} m/s</span></div>
+    <div class="hrs">${hrs.map(i=>{const x=wmo(H.weather_code[i]);return `<div class="hr"><b>${H.time[i].slice(11,16)}</b><span class="i" title="${x.t}">${x.i}</span>${Math.round(H.temperature_2m[i])}°<small>☔${H.precipitation_probability[i]??"—"}%・${Math.round(H.wind_speed_10m[i])}m/s</small></div>`;}).join("")}</div>
+    <div class="foot"><span>資料：Open-Meteo・更新 ${new Date().toLocaleTimeString("zh-TW",{hour:"2-digit",minute:"2-digit"})}（每次重新整理都會重抓）</span><a href="${yr(L.q)}" target="_blank" rel="noopener">yr.no 完整預報（${L.q}）›</a></div></div>`);
+  chip.querySelector(".wxbtn").addEventListener("click",e=>{const on=panel.classList.toggle("open"); e.target.classList.toggle("on",on); e.target.textContent=on?"✕ 收合":"詳細 ›";});
+  const frag=document.createDocumentFragment(); frag.appendChild(chip); frag.appendChild(panel); return frag;
+}
+async function loadWeather(){
+  const holders={};
+  WX_DAYS.forEach(([id])=>{const day=document.getElementById("stops-"+id)?.closest(".day"); if(!day) return;
+    let box=day.querySelector(".wx"); if(!box){box=el(`<div class="wx"></div>`); day.querySelector(".day-head").after(box);} box.innerHTML=`<div class="wxchip err">🌤️ 天氣載入中…</div>`; holders[id]=box;});
+  const keys=[...new Set(WX_DAYS.flatMap(x=>x[2]))];
+  const res={};
+  await Promise.all(keys.map(async k=>{try{const r=await fetch(wxUrl(WX_LOC[k]),{cache:"no-store"}); if(!r.ok) throw 0; res[k]=await r.json();}catch(e){res[k]=null;}}));
+  WX_DAYS.forEach(([id,date,locs])=>{const box=holders[id]; if(!box) return; box.innerHTML=""; locs.forEach(k=>box.appendChild(wxChip(id,date,k,res[k])));});
+}
+
+render(); buildNav(); spy(); load(); loadWeather();
 </script>
 </body>
 </html>
