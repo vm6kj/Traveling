@@ -1,4 +1,4 @@
-# 北歐三國 訂票操作手冊（v20・12 晚住宿全訂完）
+# 北歐三國 訂票操作手冊（v21・出發版）
 
 **行程**：2026/9/11–9/26・**4 人**｜**更新**：2026/8/20
 **匯率**：NOK 1 ≈ NT$3.0–3.3・DKK 1 ≈ NT$4.7・SEK 1 ≈ NT$3.3・EUR 1 ≈ NT$35
@@ -74,7 +74,7 @@ Voss 過夜讓縮影日 20:30 收工（原案要 22:30 才進卑爾根），且 
 - **1 間四人房：含專用衛浴、4 張上下舖、12 m²**——大行李在房裡開不了幾咖，過夜用品先抽出來
 - **Herholdtsgade 6, 1605 København V**｜電話 +45 2063 0011
 - Nørreport 站 6 分（9/13 去 Helsingør 從這搭）、Tivoli 10 分、中央車站 12 分；有室內泳池
-- City Pass Small（zone 1–4）涵蓋兩間旅館與機場段
+- City Pass Small（zone 1–4）涵蓋兩間旅館與機場段。**買紙本票**：Rejsebillet App 註冊要簡訊驗證，國外號碼常失敗；機場 Terminal 3 火車月台 DSB 售票機／地鐵售票機／7-Eleven 刷卡即可買，票面印有效期限、免打卡、購買當下起算。9/12 Small 24h（DKK 100/人）；9/13 克倫堡在 1–4 區外 → Ørestad 站買 City Pass Large 24h（約 DKK 200/人）；9/14 缺的段落買單程票
 
 **9/15–9/17｜奧斯陸 Airbnb「奧斯陸的房源」**（確認碼 HM9B9K85MP・NT$13,686・待房東確認）
 - 房東 **Kristian**，4 人（原 Maria 那筆 HMXR4BZXD9 沒回應，已換訂這家——**確認舊申請已撤銷或過期**）
@@ -167,7 +167,7 @@ Voss 過夜讓縮影日 20:30 收工（原案要 22:30 才進卑爾根），且 
 - **特羅姆瑟市區→機場（9/23）**：市區公車 40/42 號 NOK 50/人（Svipper App），15:45 出發、16:15 抵機場
 - **特羅姆瑟叫計程車**：**Taxifix App**（當地車行官方 App，下車前先顯示車資）；市區→Telegrafbukta 約 NOK 150–250、5–8 分，自主追極光備援用
 - **Oslo Pass 24h**（visitoslo.com／官方 App，約 NOK 580–595/人）：9/15 進 MUNCH 前才啟用 → 24h 內涵蓋 9/16 Bygdøy（Fram＋Kon-Tiki）與市區交通，比單買省一點；App 版可控制啟用時間
-- **Tivoli 門票**見第 6 節（9/14 主場先線上買、9/12 加碼場現場再決定）；Vasa 門票出發前一週買；交通 App：CPH City Pass・Ruter・Skyss・Svipper・SL
+- **Tivoli 門票**見第 6 節（9/14 主場先線上買、9/12 加碼場現場再決定）；Vasa 門票出發前一週買；交通 App：Ruter・Skyss・Svipper・SL（哥本哈根改買紙本 City Pass，見上）
 
 ---
 
