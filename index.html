@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>北歐三國旅遊手冊 v22｜2026.9.11–9.26</title>
+<title>北歐三國旅遊手冊 v23｜2026.9.11–9.26</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -56,6 +56,22 @@ body{background:var(--snow);color:var(--fjord);font-family:var(--sans);font-size
 .day-head .w{font-size:12.5px;color:var(--fjord-soft)}
 .day-head::after{content:"";flex:1;height:1px;background:var(--line)}
 .transit{font-size:13px;color:var(--fjord-soft);background:transparent;border:1px dashed var(--line);border-radius:8px;padding:8px 12px;margin-bottom:10px}
+.scenic{border:1px solid var(--line);border-radius:10px;background:var(--card);margin-bottom:10px}
+.scenic>summary{cursor:pointer;padding:9px 12px;font-size:13px;font-weight:700;color:var(--fjord);list-style:none}
+.scenic>summary::-webkit-details-marker{display:none}
+.scenic>summary::after{content:" \25BE";color:var(--fjord-soft)}
+.scenic[open]>summary::after{content:" \25B4"}
+.scenic .sc-in{padding:0 12px 10px}
+.sc-row{display:flex;gap:10px;padding:8px 0;border-top:1px dashed var(--line)}
+.sc-t{flex:0 0 76px;font-size:12px;font-weight:700;color:var(--stay);font-variant-numeric:tabular-nums;line-height:1.5}
+.sc-b{flex:1;font-size:12.5px;line-height:1.6;min-width:0}
+.sc-h{display:flex;flex-wrap:wrap;gap:6px;align-items:baseline}
+.sc-h b{font-size:13px}
+.sc-side{font-size:11px;font-weight:700;border-radius:999px;padding:1px 7px;background:var(--birch-soft);color:#7A5410;white-space:nowrap}
+.sc-star{background:var(--rust-soft);color:var(--rust)}
+.sc-p{color:var(--fjord-soft);margin-top:2px}
+.sc-note{font-size:11.5px;color:var(--fjord-soft);line-height:1.7;margin-top:8px;padding-top:8px;border-top:1px dashed var(--line)}
+.sc-note b{color:var(--fjord)}
 .wx{display:flex;flex-wrap:wrap;gap:8px;margin:-2px 0 10px}
 .wxchip{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:12.5px;color:var(--fjord);min-height:32px}
 .wxchip .ico{font-size:20px;line-height:1}
@@ -174,7 +190,7 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
   <div class="wrap">
     <div class="eyebrow">SCANDINAVIA + ARCTIC · SEPTEMBER 2026</div>
     <h1>北歐三國旅遊手冊</h1>
-    <div class="dates">2026.9.11（五）— 9.26（六）・14 天・4 人・v22 出發版・即時天氣</div>
+    <div class="dates">2026.9.11（五）— 9.26（六）・14 天・4 人・v23 旅途中・風景時間軸</div>
     <div class="route"><span>哥本哈根 2 晚</span><span>渡輪 1 晚</span><span>奧斯陸 2 晚</span><span>Voss 1 晚</span><span>卑爾根 2 晚</span><span>特羅姆瑟 3 晚</span><span>斯德哥爾摩 2 晚</span></div>
     <div class="flights">
       <div><b>去程 9/11</b>　TG635 台北 18:50 → 曼谷 21:35｜TG950 曼谷 01:10 → 哥本哈根 07:40（+1）</div>
@@ -242,6 +258,7 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
     <div class="day">
       <div class="day-head"><span class="d">9/17</span><span class="w">週四・挪威縮影一日走完</span></div>
       <div class="transit"><b>交通</b>（✅ 已訂）：<b>08:15 從 Airbnb 出門</b>——拖著四咖行李別硬走 25 分鐘：電車 12 號（Skillebekk／Solli plass 上車，Ruter 單程票）到市中心，或 Bolt／Uber 叫兩台車（約 NOK 150–200／台、5 分鐘）。搭 <b>09:18</b> Vy F4（2 號車廂、劃位 64/65/69/70）→ 14:20 Myrdal → 14:41 Flåmsbana（自由座，下山坐左側）→ 15:39 抵 Flåm → <b>17:30 遊船 → 19:20 Gudvangen</b> → 晚間巴士（要先訂！）→ 約 20:30 抵 Voss，<b>入住 Voss、一天收工</b>。</div>
+      <details class="scenic"><summary>🏔️ 沿途風景時間軸：哪一段該抬頭、坐哪一側</summary><div class="sc-in"><div class="sc-row"><span class="sc-t">10:25–10:50</span><div class="sc-b"><div class="sc-h"><b>Vikersund → Hønefoss</b><span class="sc-side">右側</span></div><div class="sc-p">Tyrifjord 大湖沿岸，全程第一段開闊風景。</div></div></div><div class="sc-row"><span class="sc-t">11:30–12:15</span><div class="sc-b"><div class="sc-h"><b>Flå → Nesbyen → Gol</b><span class="sc-side">兩側</span></div><div class="sc-p">Hallingdal 河谷：紅色木屋、農莊與溪流，最典型的挪威內陸。</div></div></div><div class="sc-row"><span class="sc-t">12:36–13:00</span><div class="sc-b"><div class="sc-h"><b>Ål → Geilo</b><span class="sc-side">兩側</span></div><div class="sc-p">開始爬升，樹線逐漸退去，山屋變多。</div></div></div><div class="sc-row"><span class="sc-t">13:00–13:25</span><div class="sc-b"><div class="sc-h"><b>Geilo → Ustaoset → Haugastøl</b><span class="sc-side">右側</span></div><div class="sc-p">進入 <b>Hardangervidda 高原</b>：光禿石原與高山湖，九月常見殘雪。北側 Hallingskarvet 大岩壁一路相隨。</div></div></div><div class="sc-row"><span class="sc-t">13:25–13:50</span><div class="sc-b"><div class="sc-h"><b>Haugastøl → Finse</b><span class="sc-side">兩側</span><span class="sc-side sc-star">★ 精華</span></div><div class="sc-p">全程最精華。<b>Finse 是挪威最高車站（1222 公尺）、無公路可達</b>，窗外一路是 Rallarvegen 舊築路工人道。</div></div></div><div class="sc-row"><span class="sc-t">13:50 前後</span><div class="sc-b"><div class="sc-h"><b>停靠 Finse</b><span class="sc-side">左側</span><span class="sc-side sc-star">★ 必看</span></div><div class="sc-p"><b>Hardangerjøkulen 冰河</b>越過 Finsevatn 湖面展開。1979 年《帝國大反擊》的 Hoth 冰原就在這座冰河上拍的。</div></div></div><div class="sc-row"><span class="sc-t">13:50–14:20</span><div class="sc-b"><div class="sc-h"><b>Finse → Hallingskeid → Myrdal</b><span class="sc-side">左側略優</span></div><div class="sc-p">最荒涼壯闊的一段，連續穿過防雪棚，視野忽明忽暗，瀑布與裸岩交錯。</div></div></div><div class="sc-row"><span class="sc-t">14:41–15:39</span><div class="sc-b"><div class="sc-h"><b>Flåmsbana 下山</b><span class="sc-side">左側</span></div><div class="sc-p">約 14:52 在 <b>Kjosfossen 瀑布</b>停 5 分鐘可下車拍照（Huldra 精靈表演只在 6/1–8/31，九月沒有）。中段 Berekvam 錯車，之後俯瞰整條 Flåm 河谷髮夾彎。</div></div></div><div class="sc-note"><b>時間怎麼用</b>：表定只公布 Oslo S 09:18／Hønefoss 10:48／Gol 12:16／Ål 12:36／Myrdal 14:20，中間站為推估。<b>車上螢幕永遠顯示表定時刻、不會隨誤點更新</b>；即時狀況看月台看板或 Entur App，誤點就把上表整體往後加。<br><b>餐車在車廂中段</b>：13:00（Geilo）之前先去買，13:25–14:20 那段別離開座位。<br><b>Myrdal 轉乘只有 21 分鐘</b>，但 Flåmsbana 本來就是配合這班車開的、會在 Myrdal 等 5–12 分鐘；誤點時先跟車長說一聲要接 14:41。</div></div></details>
       <div id="stops-d6"></div>
     </div>
     <div class="day">
@@ -365,7 +382,7 @@ footer{margin-top:36px;font-size:12px;color:#7A8E99;text-align:center}
     </div>
   </section>
 
-  <footer>KC 的北歐手冊 v22（出發版・即時天氣・4 人）・由 Claude 整理・標記完記得匯出貼回對話</footer>
+  <footer>KC 的北歐手冊 v23（旅途中・風景時間軸・4 人）・由 Claude 整理・標記完記得匯出貼回對話</footer>
 </div>
 
 <!-- sticky bar -->
@@ -428,7 +445,7 @@ const STOPS = [
   {id:"bygdoy", day:"d5", date:"9/16", name:"Bygdøy 博物館半島", kind:"景點", desc:"Fram 極地船博物館（真船登艦）＋ Kon-Tiki 木筏——去特羅姆瑟前先看極地探險史，剛好對味。", blog:"https://www.google.com/maps/search/?api=1&query=Fram%20Museum%20Oslo", bl:"🌐 Google 評價 ›"},
   // ===== Norway 9/17 挪威縮影一日 =====
   {id:"bergensbanen", day:"d6", date:"9/17", name:"卑爾根鐵路 Oslo → Myrdal（已訂 09:18）", kind:"交通", book:true, desc:"北歐最美高原鐵路，翻越 Hardangervidda 高原。已訂 09:18 發車、14:20 抵 Myrdal，2 號車廂劃位。Oslo S 出發前有時間可去 Egertorget 的 W.B. Samson 買肉桂捲上車（步行 8 分、平日一早就開）。", blog:"https://www.willstudy.tw/norway-in-a-nutshell-202/", bl:"📖 中文遊記 ›"},
-  {id:"flamsbana", day:"d6", date:"9/17", name:"Flåmsbana 高山火車（已訂 14:41）", kind:"交通", book:true, desc:"一小時內從 866 公尺陡降到峽灣邊，全球最美鐵道常客，中途停 Kjosfossen 瀑布。R45 自由入座（下山坐左側），15:39 抵 Flåm；到 17:30 開船前近 2 小時空檔，碼頭邊的 Ægir 維京啤酒屋（在地精釀＋北歐料理）剛好填滿。", blog:"https://golovetraveling.com/flamsbana/", bl:"📖 中文遊記 ›"},
+  {id:"flamsbana", day:"d6", date:"9/17", name:"Flåmsbana 高山火車（已訂 14:41）", kind:"交通", book:true, desc:"一小時內從 866 公尺陡降到峽灣邊，全球最美鐵道常客，中途停 Kjosfossen 瀑布 5 分鐘可下車拍照（Huldra 精靈表演只在 6/1–8/31，九月沒有，只剩瀑布本身）。R45 自由入座（下山坐左側），15:39 抵 Flåm；到 17:30 開船前近 2 小時空檔，碼頭邊的 Ægir 維京啤酒屋（在地精釀＋北歐料理）剛好填滿。", blog:"https://golovetraveling.com/flamsbana/", bl:"📖 中文遊記 ›"},
   {id:"naeroyfjord", day:"d6", date:"9/17", name:"Nærøyfjord 峽灣遊船（已訂 17:30）", kind:"體驗", book:true, desc:"UNESCO 世界遺產、松恩峽灣系統最窄最壯觀的支灣（最窄僅 250 公尺）。已訂 17:30 → 19:20 抵 Gudvangen，開船前 15 分到碼頭；黃昏進峽灣、日落 19:45 前靠岸，光線是一天最軟的時段。甲板很冷，毛帽必備；船上有行李置物間。", blog:"https://eddyhsu.com/flam/", bl:"📖 中文遊記 ›"},
   {id:"h_voss", day:"d6", date:"9/17", name:"住宿：Scandic Voss（✅ 已訂）", kind:"住宿", stay:true, desc:"Agoda 訂單 <b>1766016934</b>（主住客 LuYi-Chun）：1 間標準家庭房（26 m²、上下舖＋單床、4 位大人），9/17 入住 – 9/18 退房，NT$6,072 含稅、已付款；<b>Voss 時間 8/24 19:04 起轉為不可退</b>。位置無敵：<b>Evangervegen 1A，旅館就蓋在 Voss 火車站月台上（有直通入口），離 Voss Gondol 纜車站只有 100 公尺</b>——20:30 下巴士等於到家，隔天纜車、火車都在腳邊。早餐自助口碑極好（含熱食），記得留時間吃。", blog:"https://www.google.com/maps/search/?api=1&query=Scandic%20Voss%20Evangervegen%201A", bl:"📍 地圖導航 ›"},
   // ===== Norway 9/18 卑爾根整日 =====
